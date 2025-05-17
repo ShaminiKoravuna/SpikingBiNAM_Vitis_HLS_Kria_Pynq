@@ -1,0 +1,522 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat May 17 11:19:02 2025
+# Process ID: 22972
+# Current directory: D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog
+# Command line: vivado.exe -mode batch -source run_vivadosyn.tcl
+# Log file: D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/vivado.log
+# Journal file: D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog\vivado.jou
+# Running On: DESKTOP-1O5TV0G, OS: Windows, CPU Frequency: 1805 MHz, CPU Physical cores: 4, Host memory: 16888 MB
+#-----------------------------------------------------------
+source run_vivadosyn.tcl
+# source ./settings.tcl
+## set top_module spiking_binam
+## set language verilog
+## set family zynquplus
+## set device xck26
+## set package -sfvc784
+## set speed -2LV-c
+## set clock ap_clk
+## set fsm_ext "off"
+## set add_io_buffers false ;
+# source -notrace ./extraction.tcl
+# set vivado_proj_name project
+# set vivado_proj_dir .
+# set target_device "${device}${package}${speed}"
+# set target_clk_period_ns "10"
+# set target_clk_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
+# set ip_vlnv xilinx.com:hls:spiking_binam:1.0
+# set ip_repo_path ../ip
+# set bd_design_name bd_0
+# set bd_inst_name hls_inst
+# set bd_props {}
+# set has_synth true
+# set synth_design_args {-directive sdx_optimization_effort_high}
+# set synth_dcp ""
+# set synth_props {}
+# set has_impl false
+# set impl_props {}
+# set report_options [dict create]
+# dict set report_options report_level 2
+# dict set report_options report_max_paths 10
+# dict set report_options stdout_hls_reports 1
+# dict set report_options stdout_vivado_reports 0
+# dict set report_options hls_project SpikingBINAM
+# dict set report_options hls_solution solution1
+# dict set report_options has_synth $has_synth
+# dict set report_options has_impl $has_impl
+# dict set report_options vivado_reportbasename $top_module
+# dict set report_options vivado_reportdir ./report
+# dict set report_options hls_impl_dir ..
+# dict set report_options hls_reportdir ../report/$language
+# dict set report_options target_clk_period $target_clk_period_ns
+# dict set report_options target_device $target_device
+# dict set report_options language $language
+# dict set report_options clock_name $clock
+# dict set report_options error_if_impl_timing_fails false
+# dict set report_options bindmodules {spiking_binam_flow_control_loop_pipe_sequential_init spiking_binam_mux_325_1_1_1 spiking_binam_mux_83_3_1_1 spiking_binam_mux_83_7_1_1 spiking_binam_mul_6ns_5ns_7_1_1 spiking_binam_p_ZL14storage_matrix_0_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_8_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_16_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_24_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_32_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_40_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_48_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_56_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_64_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_72_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_80_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_88_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_96_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_104_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_112_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_120_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_128_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_136_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_144_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_152_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_160_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_168_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_176_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_184_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_192_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_200_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_208_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_216_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_224_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_232_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_240_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_248_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_1_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_9_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_17_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_25_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_33_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_41_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_49_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_57_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_65_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_73_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_81_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_89_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_97_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_105_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_113_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_121_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_129_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_137_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_145_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_153_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_161_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_169_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_177_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_185_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_193_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_201_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_209_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_217_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_225_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_233_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_241_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_249_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_2_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_10_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_18_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_26_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_34_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_42_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_50_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_58_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_66_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_74_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_82_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_90_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_98_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_106_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_114_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_122_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_130_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_138_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_146_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_154_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_162_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_170_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_178_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_186_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_194_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_202_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_210_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_218_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_226_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_234_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_242_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_250_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_3_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_11_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_19_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_27_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_35_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_43_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_51_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_59_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_67_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_75_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_83_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_91_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_99_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_107_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_115_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_123_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_131_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_139_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_147_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_155_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_163_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_171_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_179_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_187_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_195_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_203_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_211_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_219_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_227_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_235_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_243_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_251_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_4_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_12_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_20_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_28_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_36_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_44_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_52_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_60_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_68_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_76_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_84_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_92_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_100_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_108_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_116_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_124_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_132_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_140_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_148_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_156_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_164_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_172_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_180_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_188_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_196_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_204_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_212_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_220_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_228_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_236_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_244_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_252_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_5_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_13_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_21_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_29_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_37_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_45_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_53_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_61_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_69_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_77_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_85_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_93_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_101_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_109_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_117_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_125_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_133_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_141_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_149_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_157_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_165_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_173_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_181_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_189_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_197_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_205_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_213_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_221_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_229_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_237_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_245_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_253_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_6_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_14_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_22_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_30_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_38_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_46_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_54_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_62_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_70_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_78_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_86_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_94_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_102_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_110_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_118_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_126_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_134_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_142_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_150_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_158_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_166_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_174_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_182_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_190_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_198_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_206_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_214_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_222_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_230_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_238_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_246_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_254_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_7_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_15_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_23_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_31_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_39_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_47_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_55_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_63_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_71_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_79_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_87_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_95_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_103_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_111_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_119_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_127_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_135_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_143_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_151_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_159_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_167_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_175_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_183_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_191_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_199_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_207_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_215_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_223_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_231_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_239_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_247_ROM_AUTO_1R spiking_binam_p_ZL14storage_matrix_255_ROM_AUTO_1R spiking_binam_v_V_RAM_AUTO_1R1W spiking_binam_ref_timer_V_RAM_AUTO_1R1W spiking_binam_CTRL_s_axi spiking_binam_regslice_both}
+# dict set report_options max_module_depth 6
+# create_project $vivado_proj_name $vivado_proj_dir -part $target_device -force
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 395.766 ; gain = 58.000
+# set_property target_language $language [current_project]
+# if { ![file exists $ip_repo_path] } {
+#   error "Cannot find packaged HLS IP"
+# }
+# set_property ip_repo_paths [file normalize $ip_repo_path] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+# create_bd_design $bd_design_name
+Wrote  : <D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\impl\verilog\project.srcs\sources_1\bd\bd_0\bd_0.bd> 
+create_bd_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 448.234 ; gain = 10.008
+# set cell_inst [create_bd_cell -type ip -vlnv $ip_vlnv $bd_inst_name]
+# if { [llength $bd_props] } { 
+#   set_property -dict $bd_props $cell_inst 
+# }
+# make_bd_pins_external $cell_inst
+# make_bd_intf_pins_external $cell_inst
+# set bd_clk_ports [get_bd_ports -filter {TYPE==clk}]
+# if { [llength $bd_clk_ports] && $target_clk_freq_hz ne "" } { 
+#   set_property CONFIG.FREQ_HZ $target_clk_freq_hz $bd_clk_ports 
+# }
+# foreach bd_port [get_bd_intf_ports] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# foreach bd_port [get_bd_ports -filter {INTF!=TRUE}] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# set s_axi_addr_width_min 32
+# foreach bd_port [get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}] {
+#   set bd_port_addr_width [get_property CONFIG.ADDR_WIDTH $bd_port]
+#   if { $bd_port_addr_width < $s_axi_addr_width_min } {
+#     puts "INFO: Updating $bd_port CONFIG.ADDR_WIDTH to $s_axi_addr_width_min"
+#     set_property CONFIG.ADDR_WIDTH $s_axi_addr_width_min $bd_port
+#   }
+# }
+INFO: Updating /s_axi_CTRL CONFIG.ADDR_WIDTH to 32
+# set_msg_config -id {[BD 41-1265]} -severity {CRITICAL WARNING} -new_severity {INFO}
+# assign_bd_address
+Slave segment '/hls_inst/s_axi_CTRL/Reg' is being assigned into address space '/s_axi_CTRL' at <0x0000_0000 [ 64K ]>.
+Wrote  : <D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\impl\verilog\project.srcs\sources_1\bd\bd_0\bd_0.bd> 
+Verilog Output written to : D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+Verilog Output written to : D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+Verilog Output written to : D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 707.043 ; gain = 216.094
+# set toprtl [make_wrapper -files [get_files ${bd_design_name}.bd] -top]
+# add_files -norecurse $toprtl
+# set top_inst_name [file root [file tail $toprtl]]
+# puts "Using BD top: $top_inst_name"
+Using BD top: bd_0_wrapper
+# set xdc_files [glob -nocomplain ./*.xdc]
+# if { [llength $xdc_files] } {
+#     add_files -fileset constrs_1 -norecurse $xdc_files
+# }
+# launch_runs synth_1 -scripts_only
+INFO: [BD 41-1662] The design 'bd_0.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+Verilog Output written to : D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+Verilog Output written to : D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hls_inst .
+Exporting to file D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/hw_handoff/bd_0.hwh
+Generated Hardware Definition File D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:01:33 . Memory (MB): peak = 707.043 ; gain = 0.000
+# foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
+#   reset_run [get_runs $run]
+# }
+# set_property XPM_LIBRARIES {XPM_MEMORY XPM_FIFO} [current_project]
+# hls_vivado_reports_setup $report_options
+TIMESTAMP: HLS-REPORT: initialize report directories: 2025-05-17 11:21:22 +0200
+# if { $has_synth || $has_impl } {
+#   # synth properties setting
+#   set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+#   set ip_inst [get_ips -quiet ${bd_design_name}*${bd_inst_name}*]
+#   if { ![llength $ip_inst] } {
+#       error "Cannot find HLS IP instance: ${bd_design_name}*${bd_inst_name}*"
+#   }
+#   set synth_run [get_runs -filter {IS_SYNTHESIS == 1} ${ip_inst}*]
+#   if { ![llength $synth_run] } {
+#       error "Cannot find synth run for HLS IP: ${ip_inst}*"
+#   }
+# 
+#   if { [llength $synth_design_args] } {
+#       set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value $synth_design_args -objects $synth_run
+#   }
+# 
+#   if { [llength $synth_props] } {
+#     set_property -dict $synth_props $synth_run
+#   }
+# 
+#   # launch run synth
+#   launch_runs synth_1
+#   wait_on_run synth_1
+#   # synth reports
+#   hls_vivado_reports_synth synth_1 $report_options
+#   if { $synth_dcp ne "" } {
+#     file mkdir [file dirname $synth_dcp]
+#     set run_dcp [glob -nocomplain [get_property DIRECTORY $synth_run]/*.dcp]
+#     if { [llength $run_dcp] != 1 } { error "Cannot find single dcp file for run $synth_run" }
+#     file copy -force $run_dcp $synth_dcp
+#   }
+# }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Sat May 17 11:21:25 2025] Launched bd_0_hls_inst_0_synth_1...
+Run output will be captured here: D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/runme.log
+[Sat May 17 11:21:25 2025] Launched synth_1...
+Run output will be captured here: D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/synth_1/runme.log
+[Sat May 17 11:21:25 2025] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log bd_0_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_wrapper.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source bd_0_wrapper.tcl -notrace
+INFO: Dispatch client connection id - 55865
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+Command: synth_design -top bd_0_wrapper -part xck26-sfvc784-2LV-c -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3972
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1778.492 ; gain = 331.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_wrapper' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'bd_0' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v:12]
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/synth_1/.Xil/Vivado-26020-DESKTOP-1O5TV0G/realtime/bd_0_hls_inst_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/synth_1/.Xil/Vivado-26020-DESKTOP-1O5TV0G/realtime/bd_0_hls_inst_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_wrapper' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1873.586 ; gain = 427.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1873.586 ; gain = 427.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1873.586 ; gain = 427.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1873.586 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
+Finished Parsing XDC File [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
+Parsing XDC File [D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/spiking_binam.xdc]
+Finished Parsing XDC File [D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/spiking_binam.xdc]
+Parsing XDC File [D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1890.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1890.891 ; gain = 0.152
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1890.891 ; gain = 444.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1890.891 ; gain = 444.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for bd_0_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_0_i/hls_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1890.891 ; gain = 444.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1890.891 ; gain = 444.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1890.891 ; gain = 444.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2430.672 ; gain = 984.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2430.672 ; gain = 984.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2449.770 ; gain = 1003.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2455.523 ; gain = 1008.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2455.523 ; gain = 1008.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2455.523 ; gain = 1008.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2455.523 ; gain = 1008.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2455.523 ; gain = 1008.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2455.523 ; gain = 1008.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |bd_0_hls_inst_0 |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |bd_0_hls_inst |     1|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2455.523 ; gain = 1008.938
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2455.523 ; gain = 991.633
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2455.523 ; gain = 1008.938
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2455.523 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2498.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a97d027b
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2498.074 ; gain = 2030.805
+INFO: [Common 17-1381] The checkpoint 'D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/synth_1/bd_0_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_wrapper_utilization_synth.rpt -pb bd_0_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 17 11:24:05 2025...
+[Sat May 17 11:24:07 2025] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:02:42 . Memory (MB): peak = 707.043 ; gain = 0.000
+TIMESTAMP: HLS-REPORT: synthesis open_run: 2025-05-17 11:24:07 +0200
+INFO: HLS-REPORT: Opening synthesis design database: open_run synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xck26-sfvc784-2LV-c
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-454] Reading design checkpoint 'd:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.dcp' for cell 'bd_0_i/hls_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1725.035 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 678 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/spiking_binam.xdc]
+Finished Parsing XDC File [D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/spiking_binam.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1725.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 8 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 24 instances
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1725.035 ; gain = 1017.992
+TIMESTAMP: HLS-REPORT: synthesis generate_reports_vivado: 2025-05-17 11:24:19 +0200
+INFO: HLS-REPORT: Running report: report_utilization -file ./report/spiking_binam_utilization_synth.rpt
+INFO: HLS-REPORT: Running report: report_utilization -hierarchical -hierarchical_depth 6 -file ./report/spiking_binam_utilization_hierarchical_synth.rpt
+INFO: HLS-REPORT: Running report: report_timing_summary -file ./report/spiking_binam_timing_synth.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 3431.262 ; gain = 1706.227
+INFO: HLS-REPORT: Running report: report_timing -max_paths 10 -file ./report/spiking_binam_timing_paths_synth.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type max -sort_by slack.
+INFO: HLS-REPORT: Running report: report_design_analysis -file ./report/spiking_binam_design_analysis_synth.rpt
+INFO: [Implflow 30-839]  
+INFO: HLS-REPORT: Running report: ::tclapp::xilinx::designutils::report_failfast -detailed_report synth -file ./report/spiking_binam_failfast_synth.rpt
+ -I- design metrics completed in 0 seconds
+ -I- DONT_TOUCH metric completed in 0 seconds
+ -I- MARK_DEBUG metric completed in 0 seconds
+ -I- utilization metrics completed in 1 seconds
+ -I- control set metrics completed in 0 seconds
+ -I- methodology check metrics completed in 0 seconds
+ -I- average fanout metrics completed in 0 seconds (0 modules)
+ -I- non-FD high fanout nets completed in 1 seconds
+ -I- path budgeting metrics completed in 0 seconds
+#  +-----------------------------------------------------------------------------------------+
+#  | Design Summary                                                                          |
+#  | design_1                                                                                |
+#  | xck26-sfvc784-2LV-c                                                                     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | Criteria                                                  | Guideline | Actual | Status |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | LUT                                                       | 70%       | 1.44%  | OK     |
+#  | FD                                                        | 50%       | 0.49%  | OK     |
+#  | LUTRAM+SRL                                                | 25%       | 0.19%  | OK     |
+#  | CARRY8                                                    | 25%       | 0.07%  | OK     |
+#  | MUXF7                                                     | 15%       | 0.75%  | OK     |
+#  | DSP                                                       | 80%       | 0.00%  | OK     |
+#  | RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+#  | URAM                                                      | 80%       | 0.00%  | OK     |
+#  | DSP+RAMB+URAM (Avg)                                       | 70%       | 0.00%  | OK     |
+#  | BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+#  | DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+#  | MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+#  | Control Sets                                              | 2196      | 59     | OK     |
+#  | Average Fanout for modules > 100k cells                   | 4         | 0      | OK     |
+#  | Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+#  | TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+#  | TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+#  | TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+#  | TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | Number of paths above max LUT budgeting (0.391ns)         | 0         | 0      | OK     |
+#  | Number of paths above max Net budgeting (0.263ns)         | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+ -I- Generated file D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/report/spiking_binam_failfast_synth.rpt
+ -I- Number of criteria to review: 0
+ -I- This report should be run before placing the design and uses conservative guidelines beyond which runtime and timing closure will likely be more challenging
+ -I- report_failfast completed in 2 seconds
+TIMESTAMP: HLS-REPORT: synthesis gen_data_dict_vivado: 2025-05-17 11:24:53 +0200
+TIMESTAMP: HLS-REPORT: synth extract_util_hier: 2025-05-17 11:24:53 +0200
+TIMESTAMP: HLS-REPORT: synth get_cell_hier_data: 2025-05-17 11:24:53 +0200
+TIMESTAMP: HLS-REPORT: synth get_timing_paths: 2025-05-17 11:24:53 +0200
+TIMESTAMP: HLS-REPORT: synth process timing paths: 2025-05-17 11:24:53 +0200
+TIMESTAMP: HLS-REPORT: synth get_all_vv_rpt_files: 2025-05-17 11:24:53 +0200
+TIMESTAMP: HLS-REPORT: synthesis write_reports_vivado: 2025-05-17 11:24:53 +0200
+HLS EXTRACTION: synth area_totals:  0 117120 234240 1248 288 0 64
+HLS EXTRACTION: synth area_current: 0 1688 1147 0 0 0 0 0 0 0
+HLS EXTRACTION: synth resources_dict: AVAIL_LUT 117120 LUT 1688 AVAIL_FF 234240 FF 1147 AVAIL_DSP 1248 DSP 0 AVAIL_BRAM 288 BRAM 0 AVAIL_URAM 64 URAM 0 LATCH 0 SRL 0 AVAIL_CLB 0 CLB 0
+INFO: HLS-REPORT: generated D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/report/vivado_syn.xml
+INFO: HLS-REPORT: generated D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/report/verilog/spiking_binam_export.rpt
+
+
+Implementation tool: Xilinx Vivado v.2022.2
+Project:             SpikingBINAM
+Solution:            solution1
+Device target:       xck26-sfvc784-2LV-c
+Report date:         Sat May 17 11:24:53 +0200 2025
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:           1688
+FF:            1147
+DSP:              0
+BRAM:             0
+URAM:             0
+LATCH:            0
+SRL:              0
+CLB:              0
+
+#=== Final timing ===
+CP required:                     10.000
+CP achieved post-synthesis:      2.471
+Timing met
+
+TIMESTAMP: HLS-REPORT: synthesis end: 2025-05-17 11:24:53 +0200
+# if { $has_impl } {
+#   # launch run impl
+#   if { [llength $impl_props] } {
+#     set_property -dict $impl_props [get_runs impl_1]
+#   }
+#   launch_runs impl_1
+#   wait_on_run impl_1
+#   # impl reports
+#   hls_vivado_reports_impl impl_1 $report_options
+# }
+# hls_vivado_reports_finalize $report_options
+TIMESTAMP: HLS-REPORT: all reports complete: 2025-05-17 11:24:53 +0200
+INFO: [Common 17-206] Exiting Vivado at Sat May 17 11:24:53 2025...

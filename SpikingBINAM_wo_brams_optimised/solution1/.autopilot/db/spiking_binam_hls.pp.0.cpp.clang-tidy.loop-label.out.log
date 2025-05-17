@@ -1,0 +1,60 @@
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:2476:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:2476:7: note: FIX-IT applied suggested code changes
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:3450:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:3450:5: note: FIX-IT applied suggested code changes
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:3464:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:3464:5: note: FIX-IT applied suggested code changes
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:3478:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:3478:5: note: FIX-IT applied suggested code changes
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:5089:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:5089:7: note: FIX-IT applied suggested code changes
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6927:5: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+    for (int s = 0; s < 256; s++) {
+    ^~~
+    VITIS_LOOP_33_1: 
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6927:5: note: FIX-IT applied suggested code changes
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6932:9: warning: Added loop label VITIS_LOOP_38_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < 256; i++) {
+        ^~~
+        VITIS_LOOP_38_2: 
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6932:9: note: FIX-IT applied suggested code changes
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6942:9: warning: Added loop label VITIS_LOOP_48_3:   [xilinx-label-all-loops]
+        while (has_spike && (spikes_read < in_spike_count) && cur.time < bin_end) {
+        ^~~~~
+        VITIS_LOOP_48_3: 
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6942:9: note: FIX-IT applied suggested code changes
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6948:17: warning: Added loop label VITIS_LOOP_54_4:   [xilinx-label-all-loops]
+                for (int bank = 0; bank < 256 / 8; bank++) {
+                ^~~
+                VITIS_LOOP_54_4: 
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6948:17: note: FIX-IT applied suggested code changes
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6950:2: warning: Added loop label VITIS_LOOP_56_5:   [xilinx-label-all-loops]
+ for (int k = 0; k < 8; k++) {
+ ^~~
+ VITIS_LOOP_56_5: 
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6950:2: note: FIX-IT applied suggested code changes
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6964:9: warning: Added loop label VITIS_LOOP_70_6:   [xilinx-label-all-loops]
+        for (int i = 0; i < 256; i++) {
+        ^~~
+        VITIS_LOOP_70_6: 
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6964:9: note: FIX-IT applied suggested code changes
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6973:9: warning: Added loop label VITIS_LOOP_79_7:   [xilinx-label-all-loops]
+        for (int i = 0; i < 256; i++) {
+        ^~~
+        VITIS_LOOP_79_7: 
+D:\Kria\May2025\BiNAM\SpikingBINAM\solution1\.autopilot\db\spiking_binam_hls.pp.0.cpp:6973:9: note: FIX-IT applied suggested code changes

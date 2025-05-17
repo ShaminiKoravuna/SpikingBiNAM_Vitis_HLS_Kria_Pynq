@@ -1,0 +1,792 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 55865
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 396.688 ; gain = 58.059
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xck26-sfvc784-2LV-c -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26088
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1781.223 ; gain = 331.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam.v:10]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_0_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_0_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_0_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_0_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_0_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_0_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_8_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_8_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_8_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_8_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_8_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_8_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_16_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_16_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_16_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_16_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_16_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_16_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_24_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_24_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_24_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_24_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_24_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_24_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_32_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_32_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_32_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_32_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_32_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_32_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_40_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_40_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_40_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_40_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_40_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_40_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_48_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_48_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_48_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_48_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_48_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_48_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_56_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_56_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_56_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_56_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_56_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_56_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_64_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_64_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_64_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_64_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_64_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_64_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_72_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_72_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_72_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_72_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_72_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_72_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_80_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_80_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_80_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_80_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_80_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_80_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_88_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_88_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_88_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_88_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_88_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_88_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_96_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_96_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_96_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_96_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_96_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_96_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_104_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_104_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_104_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_104_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_104_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_104_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_112_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_112_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_112_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_112_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_112_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_112_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_120_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_120_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_120_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_120_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_120_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_120_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_128_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_128_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_128_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_128_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_128_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_128_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_136_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_136_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_136_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_136_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_136_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_136_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_144_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_144_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_144_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_144_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_144_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_144_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_152_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_152_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_152_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_152_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_152_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_152_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_160_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_160_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_160_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_160_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_160_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_160_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_168_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_168_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_168_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_168_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_168_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_168_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_176_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_176_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_176_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_176_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_176_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_176_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_184_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_184_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_184_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_184_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_184_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_184_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_192_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_192_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_192_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_192_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_192_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_192_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_200_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_200_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_200_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_200_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_200_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_200_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_208_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_208_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_208_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_208_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_208_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_208_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_216_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_216_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_216_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_216_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_216_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_216_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_224_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_224_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_224_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_224_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_224_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_224_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_232_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_232_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_232_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_232_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_232_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_232_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_240_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_240_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_240_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_240_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_240_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_240_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_248_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_248_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_248_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_248_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_248_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_248_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_1_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_1_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_1_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_1_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_1_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_1_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_9_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_9_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_9_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_9_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_9_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_9_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_17_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_17_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_17_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_17_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_17_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_17_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_25_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_25_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_25_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_25_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_25_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_25_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_33_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_33_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_33_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_33_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_33_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_33_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_41_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_41_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_41_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_41_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_41_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_41_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_49_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_49_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_49_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_49_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_49_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_49_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_57_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_57_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_57_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_57_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_57_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_57_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_65_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_65_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_65_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_65_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_65_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_65_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_73_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_73_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_73_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_73_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_73_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_73_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_81_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_81_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_81_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_81_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_81_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_81_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_89_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_89_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_89_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_89_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_89_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_89_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_97_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_97_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_97_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_97_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_97_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_97_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_105_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_105_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_105_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_105_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_105_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_105_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_113_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_113_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_113_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_113_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_113_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_113_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_121_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_121_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_121_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_121_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_121_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_121_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_129_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_129_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_129_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_129_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_129_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_129_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_137_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_137_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_137_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_137_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_137_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_137_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_145_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_145_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_145_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_145_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_145_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_145_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_153_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_153_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_153_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_153_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_153_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_153_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_161_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_161_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_161_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_161_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_161_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_161_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_169_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_169_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_169_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_169_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_169_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_169_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_177_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_177_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_177_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_177_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_177_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_177_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_185_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_185_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_185_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_185_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_185_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_185_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_193_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_193_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_193_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_193_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_193_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_193_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_201_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_201_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_201_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_201_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_201_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_201_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_209_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_209_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_209_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_209_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_209_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_209_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_217_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_217_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_217_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_217_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_217_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_217_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_225_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_225_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_225_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_225_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_225_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_225_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_233_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_233_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_233_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_233_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_233_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_233_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_241_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_241_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_241_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_241_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_241_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_241_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_249_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_249_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_249_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_249_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_249_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_249_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_2_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_2_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_2_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_2_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_2_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_2_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_10_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_10_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_10_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_10_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_10_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_18_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_18_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_18_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_18_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_18_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_18_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_26_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_26_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_26_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_26_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_26_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_26_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_34_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_34_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_34_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_34_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_34_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_34_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_42_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_42_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_42_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_42_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_42_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_42_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_50_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_50_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_50_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_50_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_50_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_50_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_58_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_58_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_58_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_58_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_58_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_58_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_66_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_66_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_66_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_66_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_66_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_66_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_74_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_74_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_74_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_74_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_74_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_74_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_82_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_82_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_82_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_82_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_82_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_82_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_90_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_90_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_90_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_90_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_90_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_90_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_98_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_98_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_98_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_98_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_98_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_98_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_106_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_106_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_106_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_106_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_106_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_106_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_114_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_114_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_114_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_114_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_114_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_114_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_122_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_122_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_122_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_122_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_122_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_122_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_130_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_130_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_130_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_130_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_130_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_130_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_138_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_138_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_138_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_138_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_138_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_138_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_146_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_146_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_146_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_146_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_146_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_146_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_154_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_154_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_154_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_154_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_154_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_154_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_162_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_162_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_162_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_162_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_162_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_162_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_170_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_170_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_170_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_170_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_170_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_170_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_178_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_178_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_178_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_178_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_178_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_178_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_186_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_186_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_186_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_186_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_186_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_186_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_194_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_194_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_194_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_194_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_194_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_194_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_202_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_202_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_202_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_202_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_202_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_202_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_210_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_210_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_210_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_210_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_210_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_210_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_218_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_218_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_218_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_218_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_218_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_218_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_226_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_226_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_226_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_226_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_226_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_226_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_234_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_234_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_234_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_234_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_234_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_234_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_242_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_242_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_242_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_242_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_242_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_242_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_250_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_250_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_250_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_250_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_250_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_250_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_3_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_3_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_3_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_3_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_3_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_3_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_p_ZL14storage_matrix_11_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_11_ROM_AUTO_1R.v:7]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_11_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_11_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_11_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_11_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_19_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_19_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_19_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_19_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_p_ZL14storage_matrix_27_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_27_ROM_AUTO_1R.v:28]
+INFO: [Common 17-14] Message 'Synth 8-3876' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_p_ZL14storage_matrix_27_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_p_ZL14storage_matrix_27_ROM_AUTO_1R.v:7]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_CTRL_s_axi.v:200]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_CTRL_s_axi.v:261]
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_ref_timer_V_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_v_V_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_255_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_247_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_239_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_231_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_223_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_215_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_207_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_199_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_191_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_183_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_175_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_167_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_159_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_151_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_143_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_135_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_127_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_119_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_111_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_103_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_95_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_87_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_79_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_71_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_63_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_55_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_47_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_39_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_31_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_23_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_15_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_7_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_254_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_246_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_238_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_230_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_222_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_214_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_206_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_198_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_190_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_182_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_174_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_166_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_158_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_150_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_142_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_134_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_126_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_118_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_110_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_102_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_94_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_86_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_78_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_70_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_62_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_54_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_46_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_38_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_30_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_22_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_14_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_6_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_253_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_245_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_237_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_229_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_221_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_213_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_205_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_197_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_189_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_181_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_173_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_165_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_157_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_149_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_141_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_133_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_125_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_117_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_109_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_101_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_93_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_85_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_77_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_69_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_61_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_53_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_45_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_37_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_29_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_21_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_13_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_5_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_252_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_p_ZL14storage_matrix_244_ROM_AUTO_1R is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1970.680 ; gain = 520.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1970.680 ; gain = 520.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1970.680 ; gain = 520.691
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1970.680 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/spiking_binam_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/spiking_binam_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2067.926 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2067.926 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2067.926 ; gain = 617.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2067.926 ; gain = 617.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2067.926 ; gain = 617.938
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln54_reg_3072_reg' and it is trimmed from '6' to '5' bits. [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_54_4.v:1553]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_reg_493_reg' and it is trimmed from '9' to '8' bits. [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0f3a/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_79_7.v:413]
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'spiking_binam_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'spiking_binam_CTRL_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6904] The RAM "spiking_binam_v_V_RAM_AUTO_1R1W:/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "spiking_binam_ref_timer_V_RAM_AUTO_1R1W:/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'spiking_binam_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'spiking_binam_CTRL_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2067.926 ; gain = 617.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 8     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 9     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 17    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 581   
++---RAMs : 
+	              224 Bit	(32 X 7 bit)          RAMs := 8     
+	               96 Bit	(32 X 3 bit)          RAMs := 8     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 24    
+	   2 Input    5 Bit        Muxes := 48    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 25    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 2     
+	 257 Input    1 Bit        Muxes := 256   
+	   2 Input    1 Bit        Muxes := 372   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "inst/v_V_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_1_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_2_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_3_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_4_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_5_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_6_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_7_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_1_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_2_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_3_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_4_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_5_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_6_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_7_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_1_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_2_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_3_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_4_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_5_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_6_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/v_V_7_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_1_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_2_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_3_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_4_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_5_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_6_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/ref_timer_V_7_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module spiking_binam_CTRL_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module spiking_binam_CTRL_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 2067.926 ; gain = 617.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------------------+-----------+----------------------+---------------+
+|inst        | v_V_U/ram_reg           | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_1_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_2_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_3_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_4_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_5_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_6_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_7_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | ref_timer_V_U/ram_reg   | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_1_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_2_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_3_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_4_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_5_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_6_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_7_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
++------------+-------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:08 . Memory (MB): peak = 2520.332 ; gain = 1070.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 2565.340 ; gain = 1115.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------------------+-----------+----------------------+---------------+
+|inst        | v_V_U/ram_reg           | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_1_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_2_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_3_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_4_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_5_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_6_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | v_V_7_U/ram_reg         | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | ref_timer_V_U/ram_reg   | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_1_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_2_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_3_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_4_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_5_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_6_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | ref_timer_V_7_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
++------------+-------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:11 . Memory (MB): peak = 2571.930 ; gain = 1121.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2585.738 ; gain = 1135.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2585.738 ; gain = 1135.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2585.738 ; gain = 1135.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2585.738 ; gain = 1135.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2585.738 ; gain = 1135.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2585.738 ; gain = 1135.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    10|
+|2     |LUT1     |     4|
+|3     |LUT2     |    29|
+|4     |LUT3     |   206|
+|5     |LUT4     |   146|
+|6     |LUT5     |   144|
+|7     |LUT6     |  1195|
+|8     |MUXF7    |   438|
+|9     |MUXF8    |   198|
+|10    |RAM32M16 |     8|
+|11    |RAM32X1D |    24|
+|12    |FDRE     |  1146|
+|13    |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2585.738 ; gain = 1135.750
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 237 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:08 . Memory (MB): peak = 2585.738 ; gain = 1038.504
+Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2585.738 ; gain = 1135.750
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2597.812 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 678 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2611.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 8 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 24 instances
+
+Synth Design complete, checksum: b78bae6c
+INFO: [Common 17-83] Releasing license: Synthesis
+366 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:25 . Memory (MB): peak = 2611.676 ; gain = 2144.863
+INFO: [Common 17-1381] The checkpoint 'D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = e0cf44d3812bffd7
+INFO: [Coretcl 2-1174] Renamed 285 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 17 11:23:08 2025...

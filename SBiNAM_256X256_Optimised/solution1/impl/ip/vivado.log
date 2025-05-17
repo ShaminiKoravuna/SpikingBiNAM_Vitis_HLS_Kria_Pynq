@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon May  5 13:03:31 2025
+# Process ID: 21100
+# Current directory: D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/ip/vivado.log
+# Journal file: D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/ip\vivado.jou
+# Running On: DESKTOP-1O5TV0G, OS: Windows, CPU Frequency: 1805 MHz, CPU Physical cores: 4, Host memory: 16888 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon May  5 13:03:44 2025...

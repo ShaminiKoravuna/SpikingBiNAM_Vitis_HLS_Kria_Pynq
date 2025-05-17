@@ -1,0 +1,265 @@
+
+
+================================================================
+== Vitis HLS Report for 'spiking_binam'
+================================================================
+* Date:           Mon May  5 13:02:25 2025
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        SpikingBINAM
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.892 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_29_1   |        ?|        ?|         ?|          -|          -|   256|        no|
+        | + VITIS_LOOP_44_3  |        ?|        ?|    3 ~ 39|          -|          -|     ?|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 10 
+3 --> 4 
+4 --> 7 5 
+5 --> 6 
+6 --> 4 
+7 --> 8 
+8 --> 9 
+9 --> 2 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.42>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%s = alloca i32 1"   --->   Operation 11 'alloca' 's' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%cur_id_V = alloca i32 1"   --->   Operation 12 'alloca' 'cur_id_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%cur_time_V_1 = alloca i32 1"   --->   Operation 13 'alloca' 'cur_time_V_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%has_spike_1 = alloca i32 1"   --->   Operation 14 'alloca' 'has_spike_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%spectopmodule_ln4 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_5" [spiking_binam_hls.cpp:4]   --->   Operation 15 'spectopmodule' 'spectopmodule_ln4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %in_spikes, void @empty_11, i32 1, i32 1, void @empty, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %in_spikes"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %in_spike_count"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %in_spike_count, void @empty_1, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_2, void @empty_3, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %in_spike_count, void @empty_4, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %out_spikes, void @empty_11, i32 1, i32 1, void @empty, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %out_spikes"   --->   Operation 22 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_1, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_2, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%in_spikes_read = nbread i33 @_ssdm_op_NbRead.axis.volatile.i32P128A, i32 %in_spikes" [spiking_binam_hls.cpp:24]   --->   Operation 24 'nbread' 'in_spikes_read' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%has_spike = extractvalue i33 %in_spikes_read" [spiking_binam_hls.cpp:24]   --->   Operation 25 'extractvalue' 'has_spike' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%p_s = extractvalue i33 %in_spikes_read" [spiking_binam_hls.cpp:24]   --->   Operation 26 'extractvalue' 'p_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%cur_id_V_1 = trunc i32 %p_s" [spiking_binam_hls.cpp:24]   --->   Operation 27 'trunc' 'cur_id_V_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%cur_time_V = partselect i16 @_ssdm_op_PartSelect.i16.i32.i32.i32, i32 %p_s, i32 16, i32 31" [spiking_binam_hls.cpp:24]   --->   Operation 28 'partselect' 'cur_time_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.42ns)   --->   "%store_ln29 = store i1 %has_spike, i1 %has_spike_1" [spiking_binam_hls.cpp:29]   --->   Operation 29 'store' 'store_ln29' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 30 [1/1] (0.42ns)   --->   "%store_ln29 = store i16 %cur_time_V, i16 %cur_time_V_1" [spiking_binam_hls.cpp:29]   --->   Operation 30 'store' 'store_ln29' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 31 [1/1] (0.42ns)   --->   "%store_ln29 = store i8 %cur_id_V_1, i8 %cur_id_V" [spiking_binam_hls.cpp:29]   --->   Operation 31 'store' 'store_ln29' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 32 [1/1] (0.42ns)   --->   "%store_ln29 = store i9 0, i9 %s" [spiking_binam_hls.cpp:29]   --->   Operation 32 'store' 'store_ln29' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln29 = br void %VITIS_LOOP_34_2" [spiking_binam_hls.cpp:29]   --->   Operation 33 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.88>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%s_1 = load i9 %s" [spiking_binam_hls.cpp:30]   --->   Operation 34 'load' 's_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.88ns)   --->   "%icmp_ln29 = icmp_eq  i9 %s_1, i9 256" [spiking_binam_hls.cpp:29]   --->   Operation 35 'icmp' 'icmp_ln29' <Predicate = true> <Delay = 0.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 256, i64 256, i64 256"   --->   Operation 36 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.77ns)   --->   "%s_2 = add i9 %s_1, i9 1" [spiking_binam_hls.cpp:29]   --->   Operation 37 'add' 's_2' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln29 = br i1 %icmp_ln29, void %VITIS_LOOP_34_2.split, void %for.end95" [spiking_binam_hls.cpp:29]   --->   Operation 38 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [2/2] (0.00ns)   --->   "%call_ln0 = call void @spiking_binam_Pipeline_VITIS_LOOP_34_2, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14"   --->   Operation 39 'call' 'call_ln0' <Predicate = (!icmp_ln29)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 1.60>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%specloopname_ln22 = specloopname void @_ssdm_op_SpecLoopName, void @empty_12" [spiking_binam_hls.cpp:22]   --->   Operation 40 'specloopname' 'specloopname_ln22' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/2] (0.00ns)   --->   "%call_ln0 = call void @spiking_binam_Pipeline_VITIS_LOOP_34_2, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14"   --->   Operation 41 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node add_ln30)   --->   "%trunc_ln30 = trunc i9 %s_1" [spiking_binam_hls.cpp:30]   --->   Operation 42 'trunc' 'trunc_ln30' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns) (grouped into LUT with out node add_ln30)   --->   "%shl_ln = bitconcatenate i11 @_ssdm_op_BitConcatenate.i11.i8.i3, i8 %trunc_ln30, i3 0" [spiking_binam_hls.cpp:30]   --->   Operation 43 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns) (grouped into LUT with out node add_ln30)   --->   "%zext_ln30 = zext i11 %shl_ln" [spiking_binam_hls.cpp:30]   --->   Operation 44 'zext' 'zext_ln30' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (0.00ns) (grouped into LUT with out node add_ln30)   --->   "%shl_ln30 = shl i9 %s_1, i9 1" [spiking_binam_hls.cpp:30]   --->   Operation 45 'shl' 'shl_ln30' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns) (grouped into LUT with out node add_ln30)   --->   "%zext_ln30_1 = zext i9 %shl_ln30" [spiking_binam_hls.cpp:30]   --->   Operation 46 'zext' 'zext_ln30_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.79ns) (out node of the LUT)   --->   "%add_ln30 = add i12 %zext_ln30, i12 %zext_ln30_1" [spiking_binam_hls.cpp:30]   --->   Operation 47 'add' 'add_ln30' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 48 [1/1] (0.80ns)   --->   "%bin_start_V = add i12 %add_ln30, i12 5"   --->   Operation 48 'add' 'bin_start_V' <Predicate = true> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln186_1 = zext i12 %bin_start_V"   --->   Operation 49 'zext' 'zext_ln186_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.80ns)   --->   "%bin_end = add i12 %add_ln30, i12 15"   --->   Operation 50 'add' 'bin_end' <Predicate = true> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%zext_ln44 = zext i12 %bin_end" [spiking_binam_hls.cpp:44]   --->   Operation 51 'zext' 'zext_ln44' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.42ns)   --->   "%br_ln44 = br void %while.cond" [spiking_binam_hls.cpp:44]   --->   Operation 52 'br' 'br_ln44' <Predicate = true> <Delay = 0.42>
+
+State 4 <SV = 3> <Delay = 2.62>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%threshold_V = phi i6 0, void %VITIS_LOOP_34_2.split, i6 %threshold_V_2, void %if.end52"   --->   Operation 53 'phi' 'threshold_V' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%cur_time_V_2 = load i16 %cur_time_V_1"   --->   Operation 54 'load' 'cur_time_V_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%has_spike_2 = load i1 %has_spike_1" [spiking_binam_hls.cpp:44]   --->   Operation 55 'load' 'has_spike_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (1.10ns)   --->   "%icmp_ln1027 = icmp_ult  i16 %cur_time_V_2, i16 %zext_ln44"   --->   Operation 56 'icmp' 'icmp_ln1027' <Predicate = true> <Delay = 1.10> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 57 [1/1] (0.28ns)   --->   "%and_ln44 = and i1 %has_spike_2, i1 %icmp_ln1027" [spiking_binam_hls.cpp:44]   --->   Operation 57 'and' 'and_ln44' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln44 = br i1 %and_ln44, void %for.body58.preheader, void %while.body" [spiking_binam_hls.cpp:44]   --->   Operation 58 'br' 'br_ln44' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%specloopname_ln1031 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8"   --->   Operation 59 'specloopname' 'specloopname_ln1031' <Predicate = (and_ln44)> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (1.10ns)   --->   "%icmp_ln1031 = icmp_ult  i16 %cur_time_V_2, i16 %zext_ln186_1"   --->   Operation 60 'icmp' 'icmp_ln1031' <Predicate = (and_ln44)> <Delay = 1.10> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 61 [1/1] (0.42ns)   --->   "%br_ln45 = br i1 %icmp_ln1031, void %for.body31.preheader, void %if.end52" [spiking_binam_hls.cpp:45]   --->   Operation 61 'br' 'br_ln45' <Predicate = (and_ln44)> <Delay = 0.42>
+ST_4 : Operation 62 [1/1] (0.00ns)   --->   "%cur_id_V_load = load i8 %cur_id_V"   --->   Operation 62 'load' 'cur_id_V_load' <Predicate = (and_ln44 & !icmp_ln1031)> <Delay = 0.00>
+ST_4 : Operation 63 [2/2] (1.23ns)   --->   "%call_ln0 = call void @spiking_binam_Pipeline_VITIS_LOOP_52_4, i8 %cur_id_V_load, i1 %p_ZL14storage_matrix_3, i1 %p_ZL14storage_matrix_2, i1 %p_ZL14storage_matrix_1, i1 %p_ZL14storage_matrix_0, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7"   --->   Operation 63 'call' 'call_ln0' <Predicate = (and_ln44 & !icmp_ln1031)> <Delay = 1.23> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 64 [2/2] (0.00ns)   --->   "%call_ln0 = call void @spiking_binam_Pipeline_VITIS_LOOP_67_6, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14"   --->   Operation 64 'call' 'call_ln0' <Predicate = (!and_ln44)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 65 [1/1] (0.42ns)   --->   "%store_ln29 = store i9 %s_2, i9 %s" [spiking_binam_hls.cpp:29]   --->   Operation 65 'store' 'store_ln29' <Predicate = (!and_ln44)> <Delay = 0.42>
+
+State 5 <SV = 4> <Delay = 0.82>
+ST_5 : Operation 66 [1/2] (0.00ns)   --->   "%call_ln0 = call void @spiking_binam_Pipeline_VITIS_LOOP_52_4, i8 %cur_id_V_load, i1 %p_ZL14storage_matrix_3, i1 %p_ZL14storage_matrix_2, i1 %p_ZL14storage_matrix_1, i1 %p_ZL14storage_matrix_0, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7"   --->   Operation 66 'call' 'call_ln0' <Predicate = (!icmp_ln1031)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 67 [1/1] (0.78ns)   --->   "%threshold_V_1 = add i6 %threshold_V, i6 1"   --->   Operation 67 'add' 'threshold_V_1' <Predicate = (!icmp_ln1031)> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 68 [1/1] (0.42ns)   --->   "%br_ln63 = br void %if.end52" [spiking_binam_hls.cpp:63]   --->   Operation 68 'br' 'br_ln63' <Predicate = (!icmp_ln1031)> <Delay = 0.42>
+ST_5 : Operation 69 [1/1] (0.00ns)   --->   "%cur_id_V_load_1 = load i8 %cur_id_V" [spiking_binam_hls.cpp:63]   --->   Operation 69 'load' 'cur_id_V_load_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%in_spikes_read_1 = nbread i33 @_ssdm_op_NbRead.axis.volatile.i32P128A, i32 %in_spikes" [spiking_binam_hls.cpp:63]   --->   Operation 70 'nbread' 'in_spikes_read_1' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 71 [1/1] (0.00ns)   --->   "%has_spike_3 = extractvalue i33 %in_spikes_read_1" [spiking_binam_hls.cpp:63]   --->   Operation 71 'extractvalue' 'has_spike_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 72 [1/1] (0.00ns)   --->   "%p_0 = extractvalue i33 %in_spikes_read_1" [spiking_binam_hls.cpp:63]   --->   Operation 72 'extractvalue' 'p_0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 73 [1/1] (0.00ns)   --->   "%cur_id_V_2 = trunc i32 %p_0" [spiking_binam_hls.cpp:63]   --->   Operation 73 'trunc' 'cur_id_V_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 74 [1/1] (0.00ns)   --->   "%cur_time_V_3 = partselect i16 @_ssdm_op_PartSelect.i16.i32.i32.i32, i32 %p_0, i32 16, i32 31" [spiking_binam_hls.cpp:63]   --->   Operation 74 'partselect' 'cur_time_V_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 75 [1/1] (0.39ns)   --->   "%cur_id_V_3 = select i1 %has_spike_3, i8 %cur_id_V_2, i8 %cur_id_V_load_1" [spiking_binam_hls.cpp:63]   --->   Operation 75 'select' 'cur_id_V_3' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 76 [1/1] (0.35ns)   --->   "%cur_time_V_4 = select i1 %has_spike_3, i16 %cur_time_V_3, i16 %cur_time_V_2" [spiking_binam_hls.cpp:63]   --->   Operation 76 'select' 'cur_time_V_4' <Predicate = true> <Delay = 0.35> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 77 [1/1] (0.42ns)   --->   "%store_ln44 = store i1 %has_spike_3, i1 %has_spike_1" [spiking_binam_hls.cpp:44]   --->   Operation 77 'store' 'store_ln44' <Predicate = true> <Delay = 0.42>
+ST_5 : Operation 78 [1/1] (0.42ns)   --->   "%store_ln44 = store i16 %cur_time_V_4, i16 %cur_time_V_1" [spiking_binam_hls.cpp:44]   --->   Operation 78 'store' 'store_ln44' <Predicate = true> <Delay = 0.42>
+ST_5 : Operation 79 [1/1] (0.42ns)   --->   "%store_ln44 = store i8 %cur_id_V_3, i8 %cur_id_V" [spiking_binam_hls.cpp:44]   --->   Operation 79 'store' 'store_ln44' <Predicate = true> <Delay = 0.42>
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 80 [1/1] (0.00ns)   --->   "%threshold_V_2 = phi i6 %threshold_V_1, void %for.body31.preheader, i6 %threshold_V, void %while.body"   --->   Operation 80 'phi' 'threshold_V_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 81 [1/1] (0.00ns)   --->   "%br_ln44 = br void %while.cond" [spiking_binam_hls.cpp:44]   --->   Operation 81 'br' 'br_ln44' <Predicate = true> <Delay = 0.00>
+
+State 7 <SV = 4> <Delay = 0.00>
+ST_7 : Operation 82 [1/2] (0.00ns)   --->   "%call_ln0 = call void @spiking_binam_Pipeline_VITIS_LOOP_67_6, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14"   --->   Operation 82 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 5> <Delay = 1.23>
+ST_8 : Operation 83 [1/1] (0.00ns)   --->   "%zext_ln186 = zext i6 %threshold_V"   --->   Operation 83 'zext' 'zext_ln186' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 84 [1/1] (1.23ns)   --->   "%threshW = mul i7 %zext_ln186, i7 13"   --->   Operation 84 'mul' 'threshW' <Predicate = true> <Delay = 1.23> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 1.23> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 85 [1/1] (0.00ns)   --->   "%empty_20 = wait i32 @_ssdm_op_Wait"   --->   Operation 85 'wait' 'empty_20' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 86 [2/2] (0.00ns)   --->   "%call_ln186 = call void @spiking_binam_Pipeline_VITIS_LOOP_76_7, i7 %threshW, i12 %bin_start_V, i32 %out_spikes, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14"   --->   Operation 86 'call' 'call_ln186' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 6> <Delay = 0.00>
+ST_9 : Operation 87 [1/2] (0.00ns)   --->   "%call_ln186 = call void @spiking_binam_Pipeline_VITIS_LOOP_76_7, i7 %threshW, i12 %bin_start_V, i32 %out_spikes, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6, i7 %spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13, i3 %spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14"   --->   Operation 87 'call' 'call_ln186' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 88 [1/1] (0.00ns)   --->   "%br_ln29 = br void %VITIS_LOOP_34_2" [spiking_binam_hls.cpp:29]   --->   Operation 88 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 7> <Delay = 0.00>
+ST_10 : Operation 89 [1/1] (0.00ns)   --->   "%ret_ln85 = ret" [spiking_binam_hls.cpp:85]   --->   Operation 89 'ret' 'ret_ln85' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0.427ns
+The critical path consists of the following:
+	'alloca' operation ('has_spike') [27]  (0 ns)
+	'store' operation ('store_ln29', spiking_binam_hls.cpp:29) of variable 'has_spike', spiking_binam_hls.cpp:24 on local variable 'has_spike' [42]  (0.427 ns)
+
+ <State 2>: 0.881ns
+The critical path consists of the following:
+	'load' operation ('s', spiking_binam_hls.cpp:30) on local variable 's' [48]  (0 ns)
+	'icmp' operation ('icmp_ln29', spiking_binam_hls.cpp:29) [49]  (0.881 ns)
+
+ <State 3>: 1.61ns
+The critical path consists of the following:
+	'add' operation ('add_ln30', spiking_binam_hls.cpp:30) [61]  (0.798 ns)
+	'add' operation ('bin_start_V') [62]  (0.809 ns)
+
+ <State 4>: 2.63ns
+The critical path consists of the following:
+	'load' operation ('cur.time.V') on local variable 'cur.time.V' [69]  (0 ns)
+	'icmp' operation ('icmp_ln1031') [76]  (1.1 ns)
+	multiplexor before 'phi' operation ('threshold.V') with incoming values : ('threshold.V') [84]  (0.427 ns)
+	blocking operation 1.1 ns on control path)
+
+ <State 5>: 0.82ns
+The critical path consists of the following:
+	'load' operation ('cur_id_V_load_1', spiking_binam_hls.cpp:63) on local variable 'cur.id.V' [85]  (0 ns)
+	'select' operation ('cur.id.V', spiking_binam_hls.cpp:63) [91]  (0.393 ns)
+	'store' operation ('store_ln44', spiking_binam_hls.cpp:44) of variable 'cur.id.V', spiking_binam_hls.cpp:63 on local variable 'cur.id.V' [95]  (0.427 ns)
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 1.23ns
+The critical path consists of the following:
+	'mul' operation ('threshW') [100]  (1.23 ns)
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

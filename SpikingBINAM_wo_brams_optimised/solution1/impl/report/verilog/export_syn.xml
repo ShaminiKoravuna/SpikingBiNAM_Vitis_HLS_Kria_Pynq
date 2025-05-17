@@ -1,0 +1,1272 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2022.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>2.471</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>2.471</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>2.471</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>7.529</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>7.529</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>7.529</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>7.529</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>0</CLB>
+      <DSP>0</DSP>
+      <FF>1147</FF>
+      <LATCH>0</LATCH>
+      <LUT>1688</LUT>
+      <SRL>0</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>288</BRAM>
+      <CLB>0</CLB>
+      <DSP>1248</DSP>
+      <FF>234240</FF>
+      <LUT>117120</LUT>
+      <URAM>64</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="spiking_binam" DISPNAME="inst" RTLNAME="spiking_binam">
+      <SubModules count="280">CTRL_s_axi_U grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048 grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080 grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068 grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612 mul_6ns_5ns_7_1_1_U329 p_ZL14storage_matrix_0_U p_ZL14storage_matrix_100_U p_ZL14storage_matrix_101_U p_ZL14storage_matrix_102_U p_ZL14storage_matrix_103_U p_ZL14storage_matrix_104_U p_ZL14storage_matrix_105_U p_ZL14storage_matrix_106_U p_ZL14storage_matrix_107_U p_ZL14storage_matrix_108_U p_ZL14storage_matrix_109_U p_ZL14storage_matrix_10_U p_ZL14storage_matrix_110_U p_ZL14storage_matrix_111_U p_ZL14storage_matrix_112_U p_ZL14storage_matrix_113_U p_ZL14storage_matrix_114_U p_ZL14storage_matrix_115_U p_ZL14storage_matrix_116_U p_ZL14storage_matrix_117_U p_ZL14storage_matrix_118_U p_ZL14storage_matrix_119_U p_ZL14storage_matrix_11_U p_ZL14storage_matrix_120_U p_ZL14storage_matrix_121_U p_ZL14storage_matrix_122_U p_ZL14storage_matrix_123_U p_ZL14storage_matrix_124_U p_ZL14storage_matrix_125_U p_ZL14storage_matrix_126_U p_ZL14storage_matrix_127_U p_ZL14storage_matrix_128_U p_ZL14storage_matrix_129_U p_ZL14storage_matrix_12_U p_ZL14storage_matrix_130_U p_ZL14storage_matrix_131_U p_ZL14storage_matrix_132_U p_ZL14storage_matrix_133_U p_ZL14storage_matrix_134_U p_ZL14storage_matrix_135_U p_ZL14storage_matrix_136_U p_ZL14storage_matrix_137_U p_ZL14storage_matrix_138_U p_ZL14storage_matrix_139_U p_ZL14storage_matrix_13_U p_ZL14storage_matrix_140_U p_ZL14storage_matrix_141_U p_ZL14storage_matrix_142_U p_ZL14storage_matrix_143_U p_ZL14storage_matrix_144_U p_ZL14storage_matrix_145_U p_ZL14storage_matrix_146_U p_ZL14storage_matrix_147_U p_ZL14storage_matrix_148_U p_ZL14storage_matrix_149_U p_ZL14storage_matrix_14_U p_ZL14storage_matrix_150_U p_ZL14storage_matrix_151_U p_ZL14storage_matrix_152_U p_ZL14storage_matrix_153_U p_ZL14storage_matrix_154_U p_ZL14storage_matrix_155_U p_ZL14storage_matrix_156_U p_ZL14storage_matrix_157_U p_ZL14storage_matrix_158_U p_ZL14storage_matrix_159_U p_ZL14storage_matrix_15_U p_ZL14storage_matrix_160_U p_ZL14storage_matrix_161_U p_ZL14storage_matrix_162_U p_ZL14storage_matrix_163_U p_ZL14storage_matrix_164_U p_ZL14storage_matrix_165_U p_ZL14storage_matrix_166_U p_ZL14storage_matrix_167_U p_ZL14storage_matrix_168_U p_ZL14storage_matrix_169_U p_ZL14storage_matrix_16_U p_ZL14storage_matrix_170_U p_ZL14storage_matrix_171_U p_ZL14storage_matrix_172_U p_ZL14storage_matrix_173_U p_ZL14storage_matrix_174_U p_ZL14storage_matrix_175_U p_ZL14storage_matrix_176_U p_ZL14storage_matrix_177_U p_ZL14storage_matrix_178_U p_ZL14storage_matrix_179_U p_ZL14storage_matrix_17_U p_ZL14storage_matrix_180_U p_ZL14storage_matrix_181_U p_ZL14storage_matrix_182_U p_ZL14storage_matrix_183_U p_ZL14storage_matrix_184_U p_ZL14storage_matrix_185_U p_ZL14storage_matrix_186_U p_ZL14storage_matrix_187_U p_ZL14storage_matrix_188_U p_ZL14storage_matrix_189_U p_ZL14storage_matrix_18_U p_ZL14storage_matrix_190_U p_ZL14storage_matrix_191_U p_ZL14storage_matrix_192_U p_ZL14storage_matrix_193_U p_ZL14storage_matrix_194_U p_ZL14storage_matrix_195_U p_ZL14storage_matrix_196_U p_ZL14storage_matrix_197_U p_ZL14storage_matrix_198_U p_ZL14storage_matrix_199_U p_ZL14storage_matrix_19_U p_ZL14storage_matrix_1_U p_ZL14storage_matrix_200_U p_ZL14storage_matrix_201_U p_ZL14storage_matrix_202_U p_ZL14storage_matrix_203_U p_ZL14storage_matrix_204_U p_ZL14storage_matrix_205_U p_ZL14storage_matrix_206_U p_ZL14storage_matrix_207_U p_ZL14storage_matrix_208_U p_ZL14storage_matrix_209_U p_ZL14storage_matrix_20_U p_ZL14storage_matrix_210_U p_ZL14storage_matrix_211_U p_ZL14storage_matrix_212_U p_ZL14storage_matrix_213_U p_ZL14storage_matrix_214_U p_ZL14storage_matrix_215_U p_ZL14storage_matrix_216_U p_ZL14storage_matrix_217_U p_ZL14storage_matrix_218_U p_ZL14storage_matrix_219_U p_ZL14storage_matrix_21_U p_ZL14storage_matrix_220_U p_ZL14storage_matrix_221_U p_ZL14storage_matrix_222_U p_ZL14storage_matrix_223_U p_ZL14storage_matrix_224_U p_ZL14storage_matrix_225_U p_ZL14storage_matrix_226_U p_ZL14storage_matrix_227_U p_ZL14storage_matrix_228_U p_ZL14storage_matrix_229_U p_ZL14storage_matrix_22_U p_ZL14storage_matrix_230_U p_ZL14storage_matrix_231_U p_ZL14storage_matrix_232_U p_ZL14storage_matrix_233_U p_ZL14storage_matrix_234_U p_ZL14storage_matrix_235_U p_ZL14storage_matrix_236_U p_ZL14storage_matrix_237_U p_ZL14storage_matrix_238_U p_ZL14storage_matrix_239_U p_ZL14storage_matrix_23_U p_ZL14storage_matrix_240_U p_ZL14storage_matrix_241_U p_ZL14storage_matrix_242_U p_ZL14storage_matrix_243_U p_ZL14storage_matrix_244_U p_ZL14storage_matrix_245_U p_ZL14storage_matrix_246_U p_ZL14storage_matrix_247_U p_ZL14storage_matrix_248_U p_ZL14storage_matrix_249_U p_ZL14storage_matrix_24_U p_ZL14storage_matrix_250_U p_ZL14storage_matrix_251_U p_ZL14storage_matrix_252_U p_ZL14storage_matrix_253_U p_ZL14storage_matrix_254_U p_ZL14storage_matrix_255_U p_ZL14storage_matrix_25_U p_ZL14storage_matrix_26_U p_ZL14storage_matrix_27_U p_ZL14storage_matrix_28_U p_ZL14storage_matrix_29_U p_ZL14storage_matrix_2_U p_ZL14storage_matrix_30_U p_ZL14storage_matrix_31_U p_ZL14storage_matrix_32_U p_ZL14storage_matrix_33_U p_ZL14storage_matrix_34_U p_ZL14storage_matrix_35_U p_ZL14storage_matrix_36_U p_ZL14storage_matrix_37_U p_ZL14storage_matrix_38_U p_ZL14storage_matrix_39_U p_ZL14storage_matrix_3_U p_ZL14storage_matrix_40_U p_ZL14storage_matrix_41_U p_ZL14storage_matrix_42_U p_ZL14storage_matrix_43_U p_ZL14storage_matrix_44_U p_ZL14storage_matrix_45_U p_ZL14storage_matrix_46_U p_ZL14storage_matrix_47_U p_ZL14storage_matrix_48_U p_ZL14storage_matrix_49_U p_ZL14storage_matrix_4_U p_ZL14storage_matrix_50_U p_ZL14storage_matrix_51_U p_ZL14storage_matrix_52_U p_ZL14storage_matrix_53_U p_ZL14storage_matrix_54_U p_ZL14storage_matrix_55_U p_ZL14storage_matrix_56_U p_ZL14storage_matrix_57_U p_ZL14storage_matrix_58_U p_ZL14storage_matrix_59_U p_ZL14storage_matrix_5_U p_ZL14storage_matrix_60_U p_ZL14storage_matrix_61_U p_ZL14storage_matrix_62_U p_ZL14storage_matrix_63_U p_ZL14storage_matrix_64_U p_ZL14storage_matrix_65_U p_ZL14storage_matrix_66_U p_ZL14storage_matrix_67_U p_ZL14storage_matrix_68_U p_ZL14storage_matrix_69_U p_ZL14storage_matrix_6_U p_ZL14storage_matrix_70_U p_ZL14storage_matrix_71_U p_ZL14storage_matrix_72_U p_ZL14storage_matrix_73_U p_ZL14storage_matrix_74_U p_ZL14storage_matrix_75_U p_ZL14storage_matrix_76_U p_ZL14storage_matrix_77_U p_ZL14storage_matrix_78_U p_ZL14storage_matrix_79_U p_ZL14storage_matrix_7_U p_ZL14storage_matrix_80_U p_ZL14storage_matrix_81_U p_ZL14storage_matrix_82_U p_ZL14storage_matrix_83_U p_ZL14storage_matrix_84_U p_ZL14storage_matrix_85_U p_ZL14storage_matrix_86_U p_ZL14storage_matrix_87_U p_ZL14storage_matrix_88_U p_ZL14storage_matrix_89_U p_ZL14storage_matrix_8_U p_ZL14storage_matrix_90_U p_ZL14storage_matrix_91_U p_ZL14storage_matrix_92_U p_ZL14storage_matrix_93_U p_ZL14storage_matrix_94_U p_ZL14storage_matrix_95_U p_ZL14storage_matrix_96_U p_ZL14storage_matrix_97_U p_ZL14storage_matrix_98_U p_ZL14storage_matrix_99_U p_ZL14storage_matrix_9_U ref_timer_V_1_U ref_timer_V_2_U ref_timer_V_3_U ref_timer_V_4_U ref_timer_V_5_U ref_timer_V_6_U ref_timer_V_7_U ref_timer_V_U regslice_both_in_spikes_U regslice_both_out_spikes_U v_V_1_U v_V_2_U v_V_3_U v_V_4_U v_V_5_U v_V_6_U v_V_7_U v_V_U</SubModules>
+      <Resources FF="1147" LUT="1688"/>
+      <LocalResources FF="463" LUT="68"/>
+    </RtlModule>
+    <RtlModule CELL="inst/CTRL_s_axi_U" BINDMODULE="spiking_binam_CTRL_s_axi" DEPTH="1" TYPE="rtl" MODULENAME="CTRL_s_axi" DISPNAME="CTRL_s_axi_U" RTLNAME="spiking_binam_CTRL_s_axi">
+      <Resources FF="86" LUT="81"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048" DEPTH="1" TYPE="function" MODULENAME="spiking_binam_Pipeline_VITIS_LOOP_38_2" DISPNAME="grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048" RTLNAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_38_2">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="8" LUT="17"/>
+      <LocalResources FF="6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048/flow_control_loop_pipe_sequential_init_U" BINDMODULE="spiking_binam_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="spiking_binam_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="17"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080" DEPTH="1" TYPE="function" MODULENAME="spiking_binam_Pipeline_VITIS_LOOP_54_4" DISPNAME="grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080" RTLNAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_54_4">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="80" LUT="106"/>
+      <LocalResources FF="78" LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080/flow_control_loop_pipe_sequential_init_U" BINDMODULE="spiking_binam_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="spiking_binam_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="90"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068" DEPTH="1" TYPE="function" MODULENAME="spiking_binam_Pipeline_VITIS_LOOP_70_6" DISPNAME="grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068" RTLNAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_70_6">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="20" LUT="42"/>
+      <LocalResources FF="18" LUT="23"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068/flow_control_loop_pipe_sequential_init_U" BINDMODULE="spiking_binam_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="spiking_binam_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="19"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612" DEPTH="1" TYPE="function" MODULENAME="spiking_binam_Pipeline_VITIS_LOOP_79_7" DISPNAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612" RTLNAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_79_7">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="36" LUT="123"/>
+      <LocalResources FF="34" LUT="96"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/flow_control_loop_pipe_sequential_init_U" BINDMODULE="spiking_binam_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="spiking_binam_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="27"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_6ns_5ns_7_1_1_U329" BINDMODULE="spiking_binam_mul_6ns_5ns_7_1_1" DEPTH="1" TYPE="resource" MODULENAME="mul_6ns_5ns_7_1_1" DISPNAME="mul_6ns_5ns_7_1_1_U329" RTLNAME="spiking_binam_mul_6ns_5ns_7_1_1">
+      <Resources LUT="5"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_33_1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_5ns_7_1_1_U329" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:186" URAM="0" VARIABLE="threshW"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_0_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_0_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_0_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_0_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_0_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_0_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_100_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_100_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_100_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_100_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_100_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_100_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_100"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_101_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_101_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_101_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_101_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_101_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_101_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_101"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_102_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_102_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_102_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_102_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_102_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_102_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_102"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_103_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_103_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_103_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_103_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_103_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_103_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_103"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_104_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_104_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_104_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_104_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_104_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_104_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_104"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_105_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_105_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_105_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_105_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_105_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_105_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_105"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_106_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_106_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_106_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_106_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_106_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_106_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_106"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_107_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_107_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_107_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_107_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_107_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_107_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_107"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_108_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_108_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_108_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_108_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_108_ROM_AUTO_1R">
+      <Resources FF="1" LUT="5"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_108_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_108"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_109_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_109_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_109_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_109_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_109_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_109_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_109"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_10_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_10_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_10_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_10_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_10_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_10_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_10"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_110_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_110_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_110_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_110_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_110_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_110_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_110"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_111_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_111_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_111_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_111_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_111_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_111_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_111"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_112_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_112_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_112_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_112_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_112_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_112_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_112"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_113_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_113_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_113_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_113_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_113_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_113_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_113"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_114_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_114_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_114_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_114_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_114_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_114_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_114"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_115_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_115_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_115_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_115_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_115_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_115_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_115"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_116_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_116_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_116_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_116_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_116_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_116_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_116"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_117_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_117_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_117_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_117_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_117_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_117_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_117"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_118_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_118_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_118_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_118_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_118_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_118_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_118"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_119_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_119_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_119_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_119_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_119_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_119_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_119"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_11_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_11_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_11_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_11_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_11_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_11_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_120_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_120_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_120_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_120_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_120_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_120_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_120"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_121_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_121_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_121_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_121_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_121_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_121_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_121"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_122_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_122_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_122_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_122_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_122_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_122_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_122"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_123_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_123_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_123_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_123_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_123_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_123_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_123"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_124_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_124_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_124_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_124_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_124_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_124_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_124"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_125_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_125_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_125_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_125_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_125_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_125_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_125"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_126_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_126_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_126_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_126_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_126_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_126_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_126"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_127_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_127_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_127_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_127_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_127_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_127_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_127"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_128_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_128_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_128_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_128_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_128_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_128_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_128"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_129_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_129_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_129_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_129_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_129_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_129_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_129"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_12_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_12_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_12_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_12_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_12_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_12_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_12"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_130_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_130_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_130_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_130_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_130_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_130_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_130"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_131_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_131_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_131_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_131_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_131_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_131_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_131"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_132_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_132_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_132_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_132_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_132_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_132_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_132"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_133_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_133_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_133_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_133_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_133_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_133_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_133"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_134_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_134_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_134_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_134_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_134_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_134_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_134"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_135_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_135_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_135_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_135_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_135_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_135_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_135"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_136_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_136_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_136_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_136_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_136_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_136_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_136"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_137_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_137_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_137_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_137_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_137_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_137_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_137"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_138_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_138_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_138_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_138_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_138_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_138_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_138"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_139_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_139_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_139_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_139_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_139_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_139_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_139"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_13_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_13_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_13_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_13_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_13_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_13_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_13"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_140_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_140_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_140_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_140_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_140_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_140_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_140"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_141_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_141_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_141_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_141_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_141_ROM_AUTO_1R">
+      <Resources FF="1" LUT="2"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_141_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_141"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_142_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_142_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_142_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_142_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_142_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_142_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_142"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_143_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_143_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_143_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_143_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_143_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_143_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_143"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_144_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_144_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_144_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_144_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_144_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_144_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_144"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_145_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_145_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_145_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_145_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_145_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_145_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_145"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_146_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_146_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_146_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_146_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_146_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_146_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_146"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_147_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_147_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_147_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_147_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_147_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_147_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_147"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_148_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_148_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_148_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_148_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_148_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_148_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_148"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_149_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_149_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_149_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_149_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_149_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_149_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_149"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_14_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_14_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_14_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_14_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_14_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_14_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_14"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_150_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_150_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_150_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_150_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_150_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_150_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_150"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_151_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_151_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_151_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_151_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_151_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_151_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_151"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_152_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_152_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_152_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_152_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_152_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_152_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_152"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_153_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_153_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_153_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_153_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_153_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_153_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_153"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_154_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_154_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_154_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_154_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_154_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_154_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_154"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_155_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_155_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_155_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_155_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_155_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_155_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_155"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_156_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_156_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_156_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_156_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_156_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_156_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_156"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_157_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_157_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_157_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_157_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_157_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_157_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_157"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_158_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_158_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_158_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_158_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_158_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_158_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_158"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_159_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_159_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_159_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_159_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_159_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_159_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_159"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_15_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_15_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_15_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_15_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_15_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_15_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_15"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_160_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_160_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_160_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_160_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_160_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_160_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_160"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_161_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_161_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_161_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_161_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_161_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_161_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_161"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_162_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_162_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_162_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_162_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_162_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_162_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_162"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_163_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_163_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_163_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_163_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_163_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_163_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_163"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_164_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_164_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_164_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_164_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_164_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_164_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_164"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_165_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_165_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_165_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_165_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_165_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_165_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_165"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_166_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_166_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_166_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_166_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_166_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_166_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_166"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_167_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_167_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_167_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_167_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_167_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_167_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_167"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_168_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_168_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_168_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_168_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_168_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_168_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_168"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_169_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_169_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_169_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_169_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_169_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_169_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_169"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_16_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_16_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_16_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_16_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_16_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_16_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_170_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_170_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_170_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_170_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_170_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_170_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_170"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_171_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_171_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_171_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_171_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_171_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_171_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_171"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_172_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_172_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_172_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_172_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_172_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_172_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_172"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_173_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_173_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_173_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_173_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_173_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_173_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_173"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_174_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_174_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_174_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_174_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_174_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_174_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_174"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_175_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_175_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_175_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_175_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_175_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_175_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_175"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_176_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_176_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_176_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_176_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_176_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_176_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_176"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_177_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_177_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_177_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_177_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_177_ROM_AUTO_1R">
+      <Resources FF="1" LUT="2"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_177_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_177"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_178_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_178_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_178_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_178_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_178_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_178_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_178"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_179_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_179_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_179_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_179_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_179_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_179_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_179"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_17_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_17_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_17_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_17_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_17_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_17_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_17"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_180_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_180_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_180_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_180_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_180_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_180_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_180"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_181_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_181_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_181_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_181_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_181_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_181_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_181"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_182_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_182_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_182_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_182_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_182_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_182_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_182"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_183_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_183_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_183_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_183_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_183_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_183_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_183"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_184_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_184_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_184_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_184_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_184_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_184_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_184"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_185_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_185_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_185_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_185_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_185_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_185_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_185"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_186_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_186_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_186_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_186_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_186_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_186_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_186"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_187_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_187_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_187_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_187_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_187_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_187_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_187"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_188_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_188_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_188_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_188_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_188_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_188_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_188"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_189_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_189_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_189_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_189_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_189_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_189_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_189"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_18_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_18_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_18_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_18_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_18_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_18_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_18"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_190_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_190_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_190_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_190_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_190_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_190_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_190"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_191_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_191_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_191_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_191_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_191_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_191_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_191"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_192_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_192_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_192_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_192_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_192_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_192_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_192"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_193_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_193_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_193_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_193_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_193_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_193_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_193"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_194_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_194_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_194_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_194_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_194_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_194_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_194"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_195_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_195_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_195_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_195_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_195_ROM_AUTO_1R">
+      <Resources FF="1" LUT="2"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_195_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_195"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_196_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_196_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_196_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_196_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_196_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_196_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_196"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_197_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_197_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_197_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_197_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_197_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_197_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_197"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_198_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_198_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_198_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_198_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_198_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_198_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_198"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_199_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_199_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_199_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_199_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_199_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_199_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_199"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_19_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_19_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_19_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_19_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_19_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_19_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_19"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_1_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_1_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_1_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_1_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_1_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_1_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_200_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_200_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_200_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_200_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_200_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_200_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_200"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_201_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_201_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_201_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_201_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_201_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_201_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_201"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_202_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_202_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_202_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_202_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_202_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_202_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_202"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_203_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_203_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_203_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_203_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_203_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_203_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_203"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_204_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_204_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_204_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_204_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_204_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_204_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_204"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_205_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_205_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_205_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_205_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_205_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_205_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_205"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_206_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_206_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_206_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_206_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_206_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_206_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_206"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_207_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_207_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_207_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_207_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_207_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_207_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_207"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_208_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_208_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_208_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_208_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_208_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_208_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_208"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_209_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_209_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_209_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_209_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_209_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_209_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_209"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_20_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_20_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_20_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_20_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_20_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_20_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_20"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_210_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_210_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_210_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_210_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_210_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_210_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_210"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_211_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_211_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_211_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_211_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_211_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_211_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_211"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_212_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_212_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_212_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_212_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_212_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_212_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_212"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_213_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_213_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_213_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_213_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_213_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_213_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_213"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_214_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_214_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_214_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_214_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_214_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_214_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_214"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_215_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_215_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_215_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_215_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_215_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_215_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_215"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_216_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_216_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_216_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_216_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_216_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_216_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_216"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_217_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_217_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_217_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_217_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_217_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_217_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_217"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_218_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_218_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_218_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_218_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_218_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_218_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_218"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_219_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_219_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_219_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_219_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_219_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_219_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_219"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_21_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_21_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_21_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_21_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_21_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_21_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_21"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_220_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_220_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_220_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_220_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_220_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_220_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_220"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_221_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_221_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_221_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_221_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_221_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_221_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_221"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_222_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_222_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_222_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_222_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_222_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_222_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_222"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_223_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_223_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_223_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_223_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_223_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_223_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_223"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_224_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_224_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_224_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_224_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_224_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_224_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_224"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_225_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_225_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_225_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_225_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_225_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_225_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_225"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_226_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_226_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_226_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_226_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_226_ROM_AUTO_1R">
+      <Resources FF="1" LUT="2"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_226_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_226"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_227_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_227_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_227_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_227_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_227_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_227_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_227"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_228_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_228_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_228_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_228_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_228_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_228_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_228"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_229_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_229_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_229_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_229_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_229_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_229_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_229"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_22_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_22_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_22_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_22_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_22_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_22_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_22"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_230_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_230_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_230_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_230_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_230_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_230_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_230"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_231_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_231_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_231_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_231_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_231_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_231_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_231"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_232_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_232_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_232_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_232_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_232_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_232_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_232"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_233_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_233_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_233_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_233_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_233_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_233_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_233"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_234_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_234_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_234_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_234_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_234_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_234_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_234"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_235_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_235_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_235_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_235_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_235_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_235_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_235"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_236_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_236_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_236_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_236_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_236_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_236_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_236"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_237_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_237_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_237_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_237_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_237_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_237_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_237"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_238_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_238_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_238_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_238_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_238_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_238_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_238"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_239_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_239_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_239_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_239_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_239_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_239_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_239"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_23_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_23_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_23_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_23_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_23_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_23_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_23"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_240_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_240_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_240_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_240_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_240_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_240_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_240"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_241_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_241_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_241_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_241_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_241_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_241_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_241"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_242_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_242_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_242_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_242_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_242_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_242_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_242"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_243_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_243_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_243_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_243_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_243_ROM_AUTO_1R">
+      <Resources FF="1" LUT="2"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_243_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_243"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_244_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_244_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_244_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_244_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_244_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_244_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_244"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_245_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_245_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_245_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_245_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_245_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_245_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_245"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_246_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_246_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_246_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_246_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_246_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_246_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_246"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_247_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_247_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_247_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_247_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_247_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_247_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_247"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_248_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_248_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_248_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_248_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_248_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_248_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_248"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_249_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_249_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_249_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_249_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_249_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_249_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_249"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_24_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_24_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_24_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_24_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_24_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_24_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_24"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_250_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_250_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_250_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_250_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_250_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_250_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_250"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_251_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_251_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_251_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_251_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_251_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_251_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_251"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_252_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_252_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_252_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_252_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_252_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_252_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_252"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_253_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_253_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_253_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_253_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_253_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_253_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_253"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_254_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_254_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_254_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_254_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_254_ROM_AUTO_1R">
+      <Resources FF="1" LUT="5"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_254_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_254"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_255_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_255_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_255_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_255_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_255_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_255_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_255"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_25_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_25_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_25_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_25_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_25_ROM_AUTO_1R">
+      <Resources FF="1" LUT="2"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_25_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_25"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_26_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_26_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_26_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_26_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_26_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_26_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_26"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_27_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_27_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_27_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_27_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_27_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_27_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_27"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_28_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_28_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_28_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_28_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_28_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_28_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_28"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_29_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_29_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_29_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_29_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_29_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_29_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_29"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_2_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_2_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_2_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_2_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_2_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_2_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_30_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_30_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_30_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_30_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_30_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_30_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_30"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_31_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_31_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_31_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_31_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_31_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_31_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_31"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_32_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_32_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_32_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_32_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_32_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_32_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_32"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_33_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_33_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_33_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_33_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_33_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_33_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_33"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_34_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_34_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_34_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_34_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_34_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_34_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_34"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_35_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_35_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_35_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_35_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_35_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_35_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_35"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_36_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_36_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_36_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_36_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_36_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_36_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_36"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_37_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_37_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_37_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_37_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_37_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_37_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_37"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_38_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_38_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_38_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_38_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_38_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_38_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_38"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_39_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_39_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_39_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_39_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_39_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_39_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_39"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_3_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_3_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_3_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_3_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_3_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_3_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_40_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_40_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_40_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_40_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_40_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_40_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_40"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_41_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_41_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_41_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_41_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_41_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_41_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_41"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_42_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_42_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_42_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_42_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_42_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_42_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_42"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_43_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_43_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_43_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_43_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_43_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_43_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_43"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_44_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_44_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_44_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_44_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_44_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_44_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_44"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_45_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_45_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_45_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_45_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_45_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_45_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_45"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_46_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_46_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_46_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_46_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_46_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_46_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_46"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_47_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_47_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_47_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_47_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_47_ROM_AUTO_1R">
+      <Resources FF="1" LUT="2"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_47_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_47"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_48_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_48_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_48_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_48_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_48_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_48_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_48"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_49_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_49_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_49_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_49_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_49_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_49_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_49"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_4_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_4_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_4_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_4_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_4_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_4_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_50_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_50_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_50_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_50_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_50_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_50_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_50"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_51_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_51_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_51_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_51_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_51_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_51_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_51"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_52_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_52_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_52_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_52_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_52_ROM_AUTO_1R">
+      <Resources FF="1" LUT="2"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_52_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_52"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_53_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_53_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_53_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_53_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_53_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_53_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_53"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_54_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_54_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_54_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_54_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_54_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_54_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_54"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_55_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_55_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_55_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_55_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_55_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_55_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_55"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_56_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_56_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_56_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_56_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_56_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_56_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_56"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_57_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_57_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_57_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_57_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_57_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_57_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_57"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_58_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_58_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_58_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_58_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_58_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_58_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_58"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_59_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_59_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_59_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_59_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_59_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_59_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_59"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_5_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_5_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_5_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_5_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_5_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_5_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_60_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_60_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_60_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_60_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_60_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_60_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_60"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_61_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_61_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_61_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_61_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_61_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_61_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_61"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_62_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_62_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_62_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_62_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_62_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_62_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_62"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_63_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_63_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_63_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_63_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_63_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_63_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_63"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_64_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_64_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_64_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_64_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_64_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_64_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_64"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_65_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_65_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_65_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_65_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_65_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_65_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_65"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_66_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_66_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_66_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_66_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_66_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_66_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_66"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_67_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_67_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_67_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_67_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_67_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_67_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_67"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_68_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_68_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_68_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_68_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_68_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_68_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_68"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_69_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_69_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_69_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_69_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_69_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_69_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_69"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_6_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_6_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_6_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_6_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_6_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_6_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_70_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_70_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_70_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_70_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_70_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_70_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_70"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_71_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_71_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_71_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_71_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_71_ROM_AUTO_1R">
+      <Resources FF="1" LUT="3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_71_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_71"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_72_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_72_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_72_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_72_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_72_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_72_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_72"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_73_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_73_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_73_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_73_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_73_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_73_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_73"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_74_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_74_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_74_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_74_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_74_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_74_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_74"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_75_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_75_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_75_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_75_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_75_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_75_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_75"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_76_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_76_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_76_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_76_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_76_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_76_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_76"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_77_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_77_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_77_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_77_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_77_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_77_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_77"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_78_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_78_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_78_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_78_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_78_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_78_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_78"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_79_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_79_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_79_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_79_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_79_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_79_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_79"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_7_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_7_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_7_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_7_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_7_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_7_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_7"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_80_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_80_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_80_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_80_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_80_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_80_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_80"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_81_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_81_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_81_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_81_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_81_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_81_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_81"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_82_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_82_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_82_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_82_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_82_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_82_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_82"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_83_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_83_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_83_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_83_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_83_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_83_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_83"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_84_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_84_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_84_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_84_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_84_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_84_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_84"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_85_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_85_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_85_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_85_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_85_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_85_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_85"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_86_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_86_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_86_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_86_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_86_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_86_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_86"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_87_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_87_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_87_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_87_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_87_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_87_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_87"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_88_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_88_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_88_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_88_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_88_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_88_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_88"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_89_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_89_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_89_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_89_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_89_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_89_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_89"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_8_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_8_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_8_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_8_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_8_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_8_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_90_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_90_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_90_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_90_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_90_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_90_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_90"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_91_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_91_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_91_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_91_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_91_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_91_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_91"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_92_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_92_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_92_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_92_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_92_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_92_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_92"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_93_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_93_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_93_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_93_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_93_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_93_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_93"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_94_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_94_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_94_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_94_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_94_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_94_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_94"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_95_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_95_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_95_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_95_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_95_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_95_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_95"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_96_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_96_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_96_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_96_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_96_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_96_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_96"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_97_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_97_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_97_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_97_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_97_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_97_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_97"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_98_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_98_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_98_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_98_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_98_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_98_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_98"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_99_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_99_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_99_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_99_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_99_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_99_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_99"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZL14storage_matrix_9_U" BINDMODULE="spiking_binam_p_ZL14storage_matrix_9_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="p_ZL14storage_matrix_9_ROM_AUTO_1R" DISPNAME="p_ZL14storage_matrix_9_U" RTLNAME="spiking_binam_p_ZL14storage_matrix_9_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL14storage_matrix_9_U" SOURCE="" URAM="0" VARIABLE="p_ZL14storage_matrix_9"/>
+    </RtlModule>
+    <RtlModule CELL="inst/ref_timer_V_1_U" BINDMODULE="spiking_binam_ref_timer_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="ref_timer_V_RAM_AUTO_1R1W" DISPNAME="ref_timer_V_1_U" RTLNAME="spiking_binam_ref_timer_V_RAM_AUTO_1R1W">
+      <Resources FF="6" LUT="7"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="ref_timer_V_1_U" SOURCE="spiking_binam_hls.cpp:19" URAM="0" VARIABLE="ref_timer_V_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/ref_timer_V_2_U" BINDMODULE="spiking_binam_ref_timer_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="ref_timer_V_RAM_AUTO_1R1W" DISPNAME="ref_timer_V_2_U" RTLNAME="spiking_binam_ref_timer_V_RAM_AUTO_1R1W">
+      <Resources FF="6" LUT="7"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="ref_timer_V_2_U" SOURCE="spiking_binam_hls.cpp:19" URAM="0" VARIABLE="ref_timer_V_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/ref_timer_V_3_U" BINDMODULE="spiking_binam_ref_timer_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="ref_timer_V_RAM_AUTO_1R1W" DISPNAME="ref_timer_V_3_U" RTLNAME="spiking_binam_ref_timer_V_RAM_AUTO_1R1W">
+      <Resources FF="6" LUT="7"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="ref_timer_V_3_U" SOURCE="spiking_binam_hls.cpp:19" URAM="0" VARIABLE="ref_timer_V_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/ref_timer_V_4_U" BINDMODULE="spiking_binam_ref_timer_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="ref_timer_V_RAM_AUTO_1R1W" DISPNAME="ref_timer_V_4_U" RTLNAME="spiking_binam_ref_timer_V_RAM_AUTO_1R1W">
+      <Resources FF="6" LUT="8"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="ref_timer_V_4_U" SOURCE="spiking_binam_hls.cpp:19" URAM="0" VARIABLE="ref_timer_V_4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/ref_timer_V_5_U" BINDMODULE="spiking_binam_ref_timer_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="ref_timer_V_RAM_AUTO_1R1W" DISPNAME="ref_timer_V_5_U" RTLNAME="spiking_binam_ref_timer_V_RAM_AUTO_1R1W">
+      <Resources FF="6" LUT="7"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="ref_timer_V_5_U" SOURCE="spiking_binam_hls.cpp:19" URAM="0" VARIABLE="ref_timer_V_5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/ref_timer_V_6_U" BINDMODULE="spiking_binam_ref_timer_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="ref_timer_V_RAM_AUTO_1R1W" DISPNAME="ref_timer_V_6_U" RTLNAME="spiking_binam_ref_timer_V_RAM_AUTO_1R1W">
+      <Resources FF="6" LUT="7"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="ref_timer_V_6_U" SOURCE="spiking_binam_hls.cpp:19" URAM="0" VARIABLE="ref_timer_V_6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/ref_timer_V_7_U" BINDMODULE="spiking_binam_ref_timer_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="ref_timer_V_RAM_AUTO_1R1W" DISPNAME="ref_timer_V_7_U" RTLNAME="spiking_binam_ref_timer_V_RAM_AUTO_1R1W">
+      <Resources FF="6" LUT="8"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="ref_timer_V_7_U" SOURCE="spiking_binam_hls.cpp:19" URAM="0" VARIABLE="ref_timer_V_7"/>
+    </RtlModule>
+    <RtlModule CELL="inst/ref_timer_V_U" BINDMODULE="spiking_binam_ref_timer_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="ref_timer_V_RAM_AUTO_1R1W" DISPNAME="ref_timer_V_U" RTLNAME="spiking_binam_ref_timer_V_RAM_AUTO_1R1W">
+      <Resources FF="6" LUT="7"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="ref_timer_V_U" SOURCE="spiking_binam_hls.cpp:19" URAM="0" VARIABLE="ref_timer_V"/>
+    </RtlModule>
+    <RtlModule CELL="inst/regslice_both_in_spikes_U" BINDMODULE="spiking_binam_regslice_both" DEPTH="1" TYPE="rtl" MODULENAME="regslice_both" DISPNAME="regslice_both_in_spikes_U" RTLNAME="spiking_binam_regslice_both">
+      <Resources FF="52" LUT="63"/>
+    </RtlModule>
+    <RtlModule CELL="inst/regslice_both_out_spikes_U" BINDMODULE="spiking_binam_regslice_both" DEPTH="1" TYPE="rtl" MODULENAME="regslice_both" DISPNAME="regslice_both_out_spikes_U" RTLNAME="spiking_binam_regslice_both">
+      <Resources FF="42" LUT="17"/>
+    </RtlModule>
+    <RtlModule CELL="inst/v_V_1_U" BINDMODULE="spiking_binam_v_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="v_V_RAM_AUTO_1R1W" DISPNAME="v_V_1_U" RTLNAME="spiking_binam_v_V_RAM_AUTO_1R1W">
+      <Resources FF="7" LUT="14"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="v_V_1_U" SOURCE="spiking_binam_hls.cpp:18" URAM="0" VARIABLE="v_V_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/v_V_2_U" BINDMODULE="spiking_binam_v_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="v_V_RAM_AUTO_1R1W" DISPNAME="v_V_2_U" RTLNAME="spiking_binam_v_V_RAM_AUTO_1R1W">
+      <Resources FF="7" LUT="14"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="v_V_2_U" SOURCE="spiking_binam_hls.cpp:18" URAM="0" VARIABLE="v_V_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/v_V_3_U" BINDMODULE="spiking_binam_v_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="v_V_RAM_AUTO_1R1W" DISPNAME="v_V_3_U" RTLNAME="spiking_binam_v_V_RAM_AUTO_1R1W">
+      <Resources FF="7" LUT="14"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="v_V_3_U" SOURCE="spiking_binam_hls.cpp:18" URAM="0" VARIABLE="v_V_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/v_V_4_U" BINDMODULE="spiking_binam_v_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="v_V_RAM_AUTO_1R1W" DISPNAME="v_V_4_U" RTLNAME="spiking_binam_v_V_RAM_AUTO_1R1W">
+      <Resources FF="7" LUT="14"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="v_V_4_U" SOURCE="spiking_binam_hls.cpp:18" URAM="0" VARIABLE="v_V_4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/v_V_5_U" BINDMODULE="spiking_binam_v_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="v_V_RAM_AUTO_1R1W" DISPNAME="v_V_5_U" RTLNAME="spiking_binam_v_V_RAM_AUTO_1R1W">
+      <Resources FF="7" LUT="14"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="v_V_5_U" SOURCE="spiking_binam_hls.cpp:18" URAM="0" VARIABLE="v_V_5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/v_V_6_U" BINDMODULE="spiking_binam_v_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="v_V_RAM_AUTO_1R1W" DISPNAME="v_V_6_U" RTLNAME="spiking_binam_v_V_RAM_AUTO_1R1W">
+      <Resources FF="7" LUT="14"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="v_V_6_U" SOURCE="spiking_binam_hls.cpp:18" URAM="0" VARIABLE="v_V_6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/v_V_7_U" BINDMODULE="spiking_binam_v_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="v_V_RAM_AUTO_1R1W" DISPNAME="v_V_7_U" RTLNAME="spiking_binam_v_V_RAM_AUTO_1R1W">
+      <Resources FF="7" LUT="14"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="v_V_7_U" SOURCE="spiking_binam_hls.cpp:18" URAM="0" VARIABLE="v_V_7"/>
+    </RtlModule>
+    <RtlModule CELL="inst/v_V_U" BINDMODULE="spiking_binam_v_V_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="v_V_RAM_AUTO_1R1W" DISPNAME="v_V_U" RTLNAME="spiking_binam_v_V_RAM_AUTO_1R1W">
+      <Resources FF="7" LUT="14"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="v_V_U" SOURCE="spiking_binam_hls.cpp:18" URAM="0" VARIABLE="v_V"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="2.129" DATAPATH_LOGIC_DELAY="0.862" DATAPATH_NET_DELAY="1.267" ENDPOINT_PIN="v_V_1_U/ram_reg_0_31_0_6/RAMA/WE" LOGIC_LEVELS="6" MAX_FANOUT="16" SLACK="7.529" STARTPOINT_PIN="v_V_7_U/q1_reg[1]/C">
+      <CELL NAME="v_V_7_U/q1_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="60"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571[0]_i_30" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="57"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571_reg[0]_i_16" PRIMITIVE_TYPE="CLB.MUXF.MUXF7" LINE_NUMBER="61"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571[0]_i_5" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="864"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571_reg[0]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" LINE_NUMBER="67"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ram_reg_0_31_0_6_i_15__5" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="506"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ram_reg_0_31_0_6_i_1__0" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="46"/>
+      <CELL NAME="v_V_1_U/ram_reg_0_31_0_6/RAMA" PRIMITIVE_TYPE="CLB.LUTRAM.RAM32M16" LINE_NUMBER=""/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.129" DATAPATH_LOGIC_DELAY="0.862" DATAPATH_NET_DELAY="1.267" ENDPOINT_PIN="v_V_1_U/ram_reg_0_31_0_6/RAMA_D1/WE" LOGIC_LEVELS="6" MAX_FANOUT="16" SLACK="7.529" STARTPOINT_PIN="v_V_7_U/q1_reg[1]/C">
+      <CELL NAME="v_V_7_U/q1_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="60"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571[0]_i_30" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="57"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571_reg[0]_i_16" PRIMITIVE_TYPE="CLB.MUXF.MUXF7" LINE_NUMBER="61"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571[0]_i_5" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="864"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571_reg[0]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" LINE_NUMBER="67"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ram_reg_0_31_0_6_i_15__5" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="506"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ram_reg_0_31_0_6_i_1__0" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="46"/>
+      <CELL NAME="v_V_1_U/ram_reg_0_31_0_6/RAMA_D1" PRIMITIVE_TYPE="CLB.LUTRAM.RAM32M16" LINE_NUMBER=""/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.129" DATAPATH_LOGIC_DELAY="0.862" DATAPATH_NET_DELAY="1.267" ENDPOINT_PIN="v_V_1_U/ram_reg_0_31_0_6/RAMB/WE" LOGIC_LEVELS="6" MAX_FANOUT="16" SLACK="7.529" STARTPOINT_PIN="v_V_7_U/q1_reg[1]/C">
+      <CELL NAME="v_V_7_U/q1_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="60"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571[0]_i_30" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="57"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571_reg[0]_i_16" PRIMITIVE_TYPE="CLB.MUXF.MUXF7" LINE_NUMBER="61"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571[0]_i_5" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="864"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571_reg[0]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" LINE_NUMBER="67"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ram_reg_0_31_0_6_i_15__5" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="506"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ram_reg_0_31_0_6_i_1__0" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="46"/>
+      <CELL NAME="v_V_1_U/ram_reg_0_31_0_6/RAMB" PRIMITIVE_TYPE="CLB.LUTRAM.RAM32M16" LINE_NUMBER=""/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.129" DATAPATH_LOGIC_DELAY="0.862" DATAPATH_NET_DELAY="1.267" ENDPOINT_PIN="v_V_1_U/ram_reg_0_31_0_6/RAMB_D1/WE" LOGIC_LEVELS="6" MAX_FANOUT="16" SLACK="7.529" STARTPOINT_PIN="v_V_7_U/q1_reg[1]/C">
+      <CELL NAME="v_V_7_U/q1_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="60"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571[0]_i_30" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="57"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571_reg[0]_i_16" PRIMITIVE_TYPE="CLB.MUXF.MUXF7" LINE_NUMBER="61"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571[0]_i_5" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="864"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571_reg[0]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" LINE_NUMBER="67"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ram_reg_0_31_0_6_i_15__5" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="506"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ram_reg_0_31_0_6_i_1__0" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="46"/>
+      <CELL NAME="v_V_1_U/ram_reg_0_31_0_6/RAMB_D1" PRIMITIVE_TYPE="CLB.LUTRAM.RAM32M16" LINE_NUMBER=""/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.129" DATAPATH_LOGIC_DELAY="0.862" DATAPATH_NET_DELAY="1.267" ENDPOINT_PIN="v_V_1_U/ram_reg_0_31_0_6/RAMC/WE" LOGIC_LEVELS="6" MAX_FANOUT="16" SLACK="7.529" STARTPOINT_PIN="v_V_7_U/q1_reg[1]/C">
+      <CELL NAME="v_V_7_U/q1_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="60"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571[0]_i_30" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="57"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571_reg[0]_i_16" PRIMITIVE_TYPE="CLB.MUXF.MUXF7" LINE_NUMBER="61"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571[0]_i_5" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="864"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/icmp_ln1031_reg_571_reg[0]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" LINE_NUMBER="67"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ram_reg_0_31_0_6_i_15__5" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="506"/>
+      <CELL NAME="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ram_reg_0_31_0_6_i_1__0" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="46"/>
+      <CELL NAME="v_V_1_U/ram_reg_0_31_0_6/RAMC" PRIMITIVE_TYPE="CLB.LUTRAM.RAM32M16" LINE_NUMBER=""/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/spiking_binam_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/spiking_binam_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/spiking_binam_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/spiking_binam_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/spiking_binam_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/spiking_binam_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Sat May 17 11:24:54 +0200 2025"/>
+    <item NAME="Version" VALUE="2022.2 (Build 3670227 on Oct 13 2022)"/>
+    <item NAME="Project" VALUE="SpikingBINAM"/>
+    <item NAME="Solution" VALUE="solution1 (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynquplus"/>
+    <item NAME="Target device" VALUE="xck26-sfvc784-2LV-c"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

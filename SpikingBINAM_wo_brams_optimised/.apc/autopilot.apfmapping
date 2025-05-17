@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="spiking_binam_hls.hpp" path="D:\Kria\May2025\BiNAM\spiking_binam_hls.hpp"/>
+    <originFiles name="spiking_binam_hls.cpp" path="D:\Kria\May2025\BiNAM\spiking_binam_hls.cpp"/>
+    <originFiles name="binam_data.h" path="D:\Kria\May2025\BiNAM\binam_data.h"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="D:\Kria\May2025\BiNAM\tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,441 @@
+
+
+================================================================
+== Synthesis Summary Report of 'spiking_binam'
+================================================================
++ General Information: 
+    * Date:           Sat May 17 11:11:55 2025
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        SpikingBINAM
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----+------------+-----------+-----+
+    |                   Modules                   | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |    |            |           |     |
+    |                   & Loops                   | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF     |    LUT    | URAM|
+    +---------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----+------------+-----------+-----+
+    |+ spiking_binam                              |     -|  4.41|        -|          -|         -|        -|     -|        no|     -|   -|  1145 (~0%)|  4961 (4%)|    -|
+    | o VITIS_LOOP_33_1                           |     -|  7.30|        -|          -|         -|        -|     -|        no|     -|   -|           -|          -|    -|
+    |  + spiking_binam_Pipeline_VITIS_LOOP_38_2   |     -|  6.10|       34|    340.000|         -|       34|     -|        no|     -|   -|    11 (~0%)|   43 (~0%)|    -|
+    |   o VITIS_LOOP_38_2                         |     -|  7.30|       32|    320.000|         1|        1|    32|       yes|     -|   -|           -|          -|    -|
+    |  + spiking_binam_Pipeline_VITIS_LOOP_70_6   |     -|  4.55|      258|  2.580e+03|         -|      258|     -|        no|     -|   -|    55 (~0%)|  126 (~0%)|    -|
+    |   o VITIS_LOOP_70_6                         |     -|  7.30|      256|  2.560e+03|         2|        1|   256|       yes|     -|   -|           -|          -|    -|
+    |  + spiking_binam_Pipeline_VITIS_LOOP_79_7   |     -|  4.41|      259|  2.590e+03|         -|      259|     -|        no|     -|   -|    77 (~0%)|  133 (~0%)|    -|
+    |   o VITIS_LOOP_79_7                         |     -|  7.30|      257|  2.570e+03|         3|        1|   256|       yes|     -|   -|           -|          -|    -|
+    |  o VITIS_LOOP_48_3                          |     -|  7.30|        -|          -|        39|        -|     -|        no|     -|   -|           -|          -|    -|
+    |   + spiking_binam_Pipeline_VITIS_LOOP_54_4  |     -|  5.17|       35|    350.000|         -|       35|     -|        no|     -|   -|    81 (~0%)|  1421 (1%)|    -|
+    |    o VITIS_LOOP_54_4                        |     -|  7.30|       33|    330.000|         3|        1|    32|       yes|     -|   -|           -|          -|    -|
+    +---------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----+------------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++------------+------------+---------------+--------+----------+
+| Interface  | Data Width | Address Width | Offset | Register |
++------------+------------+---------------+--------+----------+
+| s_axi_CTRL | 32         | 5             | 16     | 0        |
++------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface  | Register       | Offset | Width | Access | Description                      | Bit Fields                                                           |
++------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CTRL | CTRL           | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CTRL | GIER           | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CTRL | IP_IER         | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CTRL | IP_ISR         | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_CTRL | in_spike_count | 0x10   | 32    | W      | Data signal of in_spike_count    |                                                                      |
++------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++------------+---------------+-------+--------+--------+
+| Interface  | Register Mode | TDATA | TREADY | TVALID |
++------------+---------------+-------+--------+--------+
+| in_spikes  | both          | 32    | 1      | 1      |
+| out_spikes | both          | 32    | 1      | 1      |
++------------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------------+-----------+-------------------+
+| Argument       | Direction | Datatype          |
++----------------+-----------+-------------------+
+| in_spikes      | in        | stream<Spike, 0>& |
+| in_spike_count | in        | int               |
+| out_spikes     | out       | stream<Spike, 0>& |
++----------------+-----------+-------------------+
+
+* SW-to-HW Mapping
++----------------+--------------+-----------+------------------------------------------+
+| Argument       | HW Interface | HW Type   | HW Info                                  |
++----------------+--------------+-----------+------------------------------------------+
+| in_spikes      | in_spikes    | interface |                                          |
+| in_spike_count | s_axi_CTRL   | register  | name=in_spike_count offset=0x10 range=32 |
+| out_spikes     | out_spikes   | interface |                                          |
++----------------+--------------+-----------+------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------+-----+--------+---------------+-----+--------+---------+
+| Name                                      | DSP | Pragma | Variable      | Op  | Impl   | Latency |
++-------------------------------------------+-----+--------+---------------+-----+--------+---------+
+| + spiking_binam                           | 0   |        |               |     |        |         |
+|   s_2_fu_4699_p2                          | -   |        | s_2           | add | fabric | 0       |
+|   add_ln34_fu_4729_p2                     | -   |        | add_ln34      | add | fabric | 0       |
+|   bin_start_V_fu_4735_p2                  | -   |        | bin_start_V   | add | fabric | 0       |
+|   bin_end_fu_4745_p2                      | -   |        | bin_end       | add | fabric | 0       |
+|   threshold_V_3_fu_5055_p2                | -   |        | threshold_V_3 | add | fabric | 0       |
+|   add_ln66_fu_5080_p2                     | -   |        | add_ln66      | add | fabric | 0       |
+|   mul_6ns_5ns_7_1_1_U329                  | -   |        | threshW       | mul | auto   | 0       |
+|  + spiking_binam_Pipeline_VITIS_LOOP_38_2 | 0   |        |               |     |        |         |
+|    add_ln38_fu_344_p2                     | -   |        | add_ln38      | add | fabric | 0       |
+|  + spiking_binam_Pipeline_VITIS_LOOP_70_6 | 0   |        |               |     |        |         |
+|    add_ln70_fu_218_p2                     | -   |        | add_ln70      | add | fabric | 0       |
+|    add_ln841_fu_282_p2                    | -   |        | add_ln841     | add | fabric | 0       |
+|  + spiking_binam_Pipeline_VITIS_LOOP_54_4 | 0   |        |               |     |        |         |
+|    add_ln54_fu_2370_p2                    | -   |        | add_ln54      | add | fabric | 0       |
+|    v_V_d0                                 | -   |        | add_ln840     | add | fabric | 0       |
+|    v_V_1_d0                               | -   |        | add_ln840_1   | add | fabric | 0       |
+|    v_V_2_d0                               | -   |        | add_ln840_2   | add | fabric | 0       |
+|    v_V_3_d0                               | -   |        | add_ln840_3   | add | fabric | 0       |
+|    v_V_4_d0                               | -   |        | add_ln840_4   | add | fabric | 0       |
+|    v_V_5_d0                               | -   |        | add_ln840_5   | add | fabric | 0       |
+|    v_V_6_d0                               | -   |        | add_ln840_6   | add | fabric | 0       |
+|    v_V_7_d0                               | -   |        | add_ln840_7   | add | fabric | 0       |
+|  + spiking_binam_Pipeline_VITIS_LOOP_79_7 | 0   |        |               |     |        |         |
+|    i_1_fu_397_p2                          | -   |        | i_1           | add | fabric | 0       |
++-------------------------------------------+-----+--------+---------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++------------------------------+------+------+--------+--------------------------+---------+------+---------+
+| Name                         | BRAM | URAM | Pragma | Variable                 | Storage | Impl | Latency |
++------------------------------+------+------+--------+--------------------------+---------+------+---------+
+| + spiking_binam              | 0    | 0    |        |                          |         |      |         |
+|   v_V_U                      | -    | -    |        | v_V                      | ram_s2p | auto | 1       |
+|   v_V_1_U                    | -    | -    |        | v_V_1                    | ram_s2p | auto | 1       |
+|   v_V_2_U                    | -    | -    |        | v_V_2                    | ram_s2p | auto | 1       |
+|   v_V_3_U                    | -    | -    |        | v_V_3                    | ram_s2p | auto | 1       |
+|   v_V_4_U                    | -    | -    |        | v_V_4                    | ram_s2p | auto | 1       |
+|   v_V_5_U                    | -    | -    |        | v_V_5                    | ram_s2p | auto | 1       |
+|   v_V_6_U                    | -    | -    |        | v_V_6                    | ram_s2p | auto | 1       |
+|   v_V_7_U                    | -    | -    |        | v_V_7                    | ram_s2p | auto | 1       |
+|   ref_timer_V_U              | -    | -    |        | ref_timer_V              | ram_s2p | auto | 1       |
+|   ref_timer_V_1_U            | -    | -    |        | ref_timer_V_1            | ram_s2p | auto | 1       |
+|   ref_timer_V_2_U            | -    | -    |        | ref_timer_V_2            | ram_s2p | auto | 1       |
+|   ref_timer_V_3_U            | -    | -    |        | ref_timer_V_3            | ram_s2p | auto | 1       |
+|   ref_timer_V_4_U            | -    | -    |        | ref_timer_V_4            | ram_s2p | auto | 1       |
+|   ref_timer_V_5_U            | -    | -    |        | ref_timer_V_5            | ram_s2p | auto | 1       |
+|   ref_timer_V_6_U            | -    | -    |        | ref_timer_V_6            | ram_s2p | auto | 1       |
+|   ref_timer_V_7_U            | -    | -    |        | ref_timer_V_7            | ram_s2p | auto | 1       |
+|   p_ZL14storage_matrix_0_U   | -    | -    |        | p_ZL14storage_matrix_0   | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_8_U   | -    | -    |        | p_ZL14storage_matrix_8   | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_16_U  | -    | -    |        | p_ZL14storage_matrix_16  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_24_U  | -    | -    |        | p_ZL14storage_matrix_24  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_32_U  | -    | -    |        | p_ZL14storage_matrix_32  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_40_U  | -    | -    |        | p_ZL14storage_matrix_40  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_48_U  | -    | -    |        | p_ZL14storage_matrix_48  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_56_U  | -    | -    |        | p_ZL14storage_matrix_56  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_64_U  | -    | -    |        | p_ZL14storage_matrix_64  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_72_U  | -    | -    |        | p_ZL14storage_matrix_72  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_80_U  | -    | -    |        | p_ZL14storage_matrix_80  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_88_U  | -    | -    |        | p_ZL14storage_matrix_88  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_96_U  | -    | -    |        | p_ZL14storage_matrix_96  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_104_U | -    | -    |        | p_ZL14storage_matrix_104 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_112_U | -    | -    |        | p_ZL14storage_matrix_112 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_120_U | -    | -    |        | p_ZL14storage_matrix_120 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_128_U | -    | -    |        | p_ZL14storage_matrix_128 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_136_U | -    | -    |        | p_ZL14storage_matrix_136 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_144_U | -    | -    |        | p_ZL14storage_matrix_144 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_152_U | -    | -    |        | p_ZL14storage_matrix_152 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_160_U | -    | -    |        | p_ZL14storage_matrix_160 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_168_U | -    | -    |        | p_ZL14storage_matrix_168 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_176_U | -    | -    |        | p_ZL14storage_matrix_176 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_184_U | -    | -    |        | p_ZL14storage_matrix_184 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_192_U | -    | -    |        | p_ZL14storage_matrix_192 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_200_U | -    | -    |        | p_ZL14storage_matrix_200 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_208_U | -    | -    |        | p_ZL14storage_matrix_208 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_216_U | -    | -    |        | p_ZL14storage_matrix_216 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_224_U | -    | -    |        | p_ZL14storage_matrix_224 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_232_U | -    | -    |        | p_ZL14storage_matrix_232 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_240_U | -    | -    |        | p_ZL14storage_matrix_240 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_248_U | -    | -    |        | p_ZL14storage_matrix_248 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_1_U   | -    | -    |        | p_ZL14storage_matrix_1   | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_9_U   | -    | -    |        | p_ZL14storage_matrix_9   | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_17_U  | -    | -    |        | p_ZL14storage_matrix_17  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_25_U  | -    | -    |        | p_ZL14storage_matrix_25  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_33_U  | -    | -    |        | p_ZL14storage_matrix_33  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_41_U  | -    | -    |        | p_ZL14storage_matrix_41  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_49_U  | -    | -    |        | p_ZL14storage_matrix_49  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_57_U  | -    | -    |        | p_ZL14storage_matrix_57  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_65_U  | -    | -    |        | p_ZL14storage_matrix_65  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_73_U  | -    | -    |        | p_ZL14storage_matrix_73  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_81_U  | -    | -    |        | p_ZL14storage_matrix_81  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_89_U  | -    | -    |        | p_ZL14storage_matrix_89  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_97_U  | -    | -    |        | p_ZL14storage_matrix_97  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_105_U | -    | -    |        | p_ZL14storage_matrix_105 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_113_U | -    | -    |        | p_ZL14storage_matrix_113 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_121_U | -    | -    |        | p_ZL14storage_matrix_121 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_129_U | -    | -    |        | p_ZL14storage_matrix_129 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_137_U | -    | -    |        | p_ZL14storage_matrix_137 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_145_U | -    | -    |        | p_ZL14storage_matrix_145 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_153_U | -    | -    |        | p_ZL14storage_matrix_153 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_161_U | -    | -    |        | p_ZL14storage_matrix_161 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_169_U | -    | -    |        | p_ZL14storage_matrix_169 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_177_U | -    | -    |        | p_ZL14storage_matrix_177 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_185_U | -    | -    |        | p_ZL14storage_matrix_185 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_193_U | -    | -    |        | p_ZL14storage_matrix_193 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_201_U | -    | -    |        | p_ZL14storage_matrix_201 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_209_U | -    | -    |        | p_ZL14storage_matrix_209 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_217_U | -    | -    |        | p_ZL14storage_matrix_217 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_225_U | -    | -    |        | p_ZL14storage_matrix_225 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_233_U | -    | -    |        | p_ZL14storage_matrix_233 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_241_U | -    | -    |        | p_ZL14storage_matrix_241 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_249_U | -    | -    |        | p_ZL14storage_matrix_249 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_2_U   | -    | -    |        | p_ZL14storage_matrix_2   | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_10_U  | -    | -    |        | p_ZL14storage_matrix_10  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_18_U  | -    | -    |        | p_ZL14storage_matrix_18  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_26_U  | -    | -    |        | p_ZL14storage_matrix_26  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_34_U  | -    | -    |        | p_ZL14storage_matrix_34  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_42_U  | -    | -    |        | p_ZL14storage_matrix_42  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_50_U  | -    | -    |        | p_ZL14storage_matrix_50  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_58_U  | -    | -    |        | p_ZL14storage_matrix_58  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_66_U  | -    | -    |        | p_ZL14storage_matrix_66  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_74_U  | -    | -    |        | p_ZL14storage_matrix_74  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_82_U  | -    | -    |        | p_ZL14storage_matrix_82  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_90_U  | -    | -    |        | p_ZL14storage_matrix_90  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_98_U  | -    | -    |        | p_ZL14storage_matrix_98  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_106_U | -    | -    |        | p_ZL14storage_matrix_106 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_114_U | -    | -    |        | p_ZL14storage_matrix_114 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_122_U | -    | -    |        | p_ZL14storage_matrix_122 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_130_U | -    | -    |        | p_ZL14storage_matrix_130 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_138_U | -    | -    |        | p_ZL14storage_matrix_138 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_146_U | -    | -    |        | p_ZL14storage_matrix_146 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_154_U | -    | -    |        | p_ZL14storage_matrix_154 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_162_U | -    | -    |        | p_ZL14storage_matrix_162 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_170_U | -    | -    |        | p_ZL14storage_matrix_170 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_178_U | -    | -    |        | p_ZL14storage_matrix_178 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_186_U | -    | -    |        | p_ZL14storage_matrix_186 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_194_U | -    | -    |        | p_ZL14storage_matrix_194 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_202_U | -    | -    |        | p_ZL14storage_matrix_202 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_210_U | -    | -    |        | p_ZL14storage_matrix_210 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_218_U | -    | -    |        | p_ZL14storage_matrix_218 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_226_U | -    | -    |        | p_ZL14storage_matrix_226 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_234_U | -    | -    |        | p_ZL14storage_matrix_234 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_242_U | -    | -    |        | p_ZL14storage_matrix_242 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_250_U | -    | -    |        | p_ZL14storage_matrix_250 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_3_U   | -    | -    |        | p_ZL14storage_matrix_3   | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_11_U  | -    | -    |        | p_ZL14storage_matrix_11  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_19_U  | -    | -    |        | p_ZL14storage_matrix_19  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_27_U  | -    | -    |        | p_ZL14storage_matrix_27  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_35_U  | -    | -    |        | p_ZL14storage_matrix_35  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_43_U  | -    | -    |        | p_ZL14storage_matrix_43  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_51_U  | -    | -    |        | p_ZL14storage_matrix_51  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_59_U  | -    | -    |        | p_ZL14storage_matrix_59  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_67_U  | -    | -    |        | p_ZL14storage_matrix_67  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_75_U  | -    | -    |        | p_ZL14storage_matrix_75  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_83_U  | -    | -    |        | p_ZL14storage_matrix_83  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_91_U  | -    | -    |        | p_ZL14storage_matrix_91  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_99_U  | -    | -    |        | p_ZL14storage_matrix_99  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_107_U | -    | -    |        | p_ZL14storage_matrix_107 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_115_U | -    | -    |        | p_ZL14storage_matrix_115 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_123_U | -    | -    |        | p_ZL14storage_matrix_123 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_131_U | -    | -    |        | p_ZL14storage_matrix_131 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_139_U | -    | -    |        | p_ZL14storage_matrix_139 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_147_U | -    | -    |        | p_ZL14storage_matrix_147 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_155_U | -    | -    |        | p_ZL14storage_matrix_155 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_163_U | -    | -    |        | p_ZL14storage_matrix_163 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_171_U | -    | -    |        | p_ZL14storage_matrix_171 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_179_U | -    | -    |        | p_ZL14storage_matrix_179 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_187_U | -    | -    |        | p_ZL14storage_matrix_187 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_195_U | -    | -    |        | p_ZL14storage_matrix_195 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_203_U | -    | -    |        | p_ZL14storage_matrix_203 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_211_U | -    | -    |        | p_ZL14storage_matrix_211 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_219_U | -    | -    |        | p_ZL14storage_matrix_219 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_227_U | -    | -    |        | p_ZL14storage_matrix_227 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_235_U | -    | -    |        | p_ZL14storage_matrix_235 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_243_U | -    | -    |        | p_ZL14storage_matrix_243 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_251_U | -    | -    |        | p_ZL14storage_matrix_251 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_4_U   | -    | -    |        | p_ZL14storage_matrix_4   | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_12_U  | -    | -    |        | p_ZL14storage_matrix_12  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_20_U  | -    | -    |        | p_ZL14storage_matrix_20  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_28_U  | -    | -    |        | p_ZL14storage_matrix_28  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_36_U  | -    | -    |        | p_ZL14storage_matrix_36  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_44_U  | -    | -    |        | p_ZL14storage_matrix_44  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_52_U  | -    | -    |        | p_ZL14storage_matrix_52  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_60_U  | -    | -    |        | p_ZL14storage_matrix_60  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_68_U  | -    | -    |        | p_ZL14storage_matrix_68  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_76_U  | -    | -    |        | p_ZL14storage_matrix_76  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_84_U  | -    | -    |        | p_ZL14storage_matrix_84  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_92_U  | -    | -    |        | p_ZL14storage_matrix_92  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_100_U | -    | -    |        | p_ZL14storage_matrix_100 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_108_U | -    | -    |        | p_ZL14storage_matrix_108 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_116_U | -    | -    |        | p_ZL14storage_matrix_116 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_124_U | -    | -    |        | p_ZL14storage_matrix_124 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_132_U | -    | -    |        | p_ZL14storage_matrix_132 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_140_U | -    | -    |        | p_ZL14storage_matrix_140 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_148_U | -    | -    |        | p_ZL14storage_matrix_148 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_156_U | -    | -    |        | p_ZL14storage_matrix_156 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_164_U | -    | -    |        | p_ZL14storage_matrix_164 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_172_U | -    | -    |        | p_ZL14storage_matrix_172 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_180_U | -    | -    |        | p_ZL14storage_matrix_180 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_188_U | -    | -    |        | p_ZL14storage_matrix_188 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_196_U | -    | -    |        | p_ZL14storage_matrix_196 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_204_U | -    | -    |        | p_ZL14storage_matrix_204 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_212_U | -    | -    |        | p_ZL14storage_matrix_212 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_220_U | -    | -    |        | p_ZL14storage_matrix_220 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_228_U | -    | -    |        | p_ZL14storage_matrix_228 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_236_U | -    | -    |        | p_ZL14storage_matrix_236 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_244_U | -    | -    |        | p_ZL14storage_matrix_244 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_252_U | -    | -    |        | p_ZL14storage_matrix_252 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_5_U   | -    | -    |        | p_ZL14storage_matrix_5   | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_13_U  | -    | -    |        | p_ZL14storage_matrix_13  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_21_U  | -    | -    |        | p_ZL14storage_matrix_21  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_29_U  | -    | -    |        | p_ZL14storage_matrix_29  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_37_U  | -    | -    |        | p_ZL14storage_matrix_37  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_45_U  | -    | -    |        | p_ZL14storage_matrix_45  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_53_U  | -    | -    |        | p_ZL14storage_matrix_53  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_61_U  | -    | -    |        | p_ZL14storage_matrix_61  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_69_U  | -    | -    |        | p_ZL14storage_matrix_69  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_77_U  | -    | -    |        | p_ZL14storage_matrix_77  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_85_U  | -    | -    |        | p_ZL14storage_matrix_85  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_93_U  | -    | -    |        | p_ZL14storage_matrix_93  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_101_U | -    | -    |        | p_ZL14storage_matrix_101 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_109_U | -    | -    |        | p_ZL14storage_matrix_109 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_117_U | -    | -    |        | p_ZL14storage_matrix_117 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_125_U | -    | -    |        | p_ZL14storage_matrix_125 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_133_U | -    | -    |        | p_ZL14storage_matrix_133 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_141_U | -    | -    |        | p_ZL14storage_matrix_141 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_149_U | -    | -    |        | p_ZL14storage_matrix_149 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_157_U | -    | -    |        | p_ZL14storage_matrix_157 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_165_U | -    | -    |        | p_ZL14storage_matrix_165 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_173_U | -    | -    |        | p_ZL14storage_matrix_173 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_181_U | -    | -    |        | p_ZL14storage_matrix_181 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_189_U | -    | -    |        | p_ZL14storage_matrix_189 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_197_U | -    | -    |        | p_ZL14storage_matrix_197 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_205_U | -    | -    |        | p_ZL14storage_matrix_205 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_213_U | -    | -    |        | p_ZL14storage_matrix_213 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_221_U | -    | -    |        | p_ZL14storage_matrix_221 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_229_U | -    | -    |        | p_ZL14storage_matrix_229 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_237_U | -    | -    |        | p_ZL14storage_matrix_237 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_245_U | -    | -    |        | p_ZL14storage_matrix_245 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_253_U | -    | -    |        | p_ZL14storage_matrix_253 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_6_U   | -    | -    |        | p_ZL14storage_matrix_6   | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_14_U  | -    | -    |        | p_ZL14storage_matrix_14  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_22_U  | -    | -    |        | p_ZL14storage_matrix_22  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_30_U  | -    | -    |        | p_ZL14storage_matrix_30  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_38_U  | -    | -    |        | p_ZL14storage_matrix_38  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_46_U  | -    | -    |        | p_ZL14storage_matrix_46  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_54_U  | -    | -    |        | p_ZL14storage_matrix_54  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_62_U  | -    | -    |        | p_ZL14storage_matrix_62  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_70_U  | -    | -    |        | p_ZL14storage_matrix_70  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_78_U  | -    | -    |        | p_ZL14storage_matrix_78  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_86_U  | -    | -    |        | p_ZL14storage_matrix_86  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_94_U  | -    | -    |        | p_ZL14storage_matrix_94  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_102_U | -    | -    |        | p_ZL14storage_matrix_102 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_110_U | -    | -    |        | p_ZL14storage_matrix_110 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_118_U | -    | -    |        | p_ZL14storage_matrix_118 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_126_U | -    | -    |        | p_ZL14storage_matrix_126 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_134_U | -    | -    |        | p_ZL14storage_matrix_134 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_142_U | -    | -    |        | p_ZL14storage_matrix_142 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_150_U | -    | -    |        | p_ZL14storage_matrix_150 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_158_U | -    | -    |        | p_ZL14storage_matrix_158 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_166_U | -    | -    |        | p_ZL14storage_matrix_166 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_174_U | -    | -    |        | p_ZL14storage_matrix_174 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_182_U | -    | -    |        | p_ZL14storage_matrix_182 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_190_U | -    | -    |        | p_ZL14storage_matrix_190 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_198_U | -    | -    |        | p_ZL14storage_matrix_198 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_206_U | -    | -    |        | p_ZL14storage_matrix_206 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_214_U | -    | -    |        | p_ZL14storage_matrix_214 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_222_U | -    | -    |        | p_ZL14storage_matrix_222 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_230_U | -    | -    |        | p_ZL14storage_matrix_230 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_238_U | -    | -    |        | p_ZL14storage_matrix_238 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_246_U | -    | -    |        | p_ZL14storage_matrix_246 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_254_U | -    | -    |        | p_ZL14storage_matrix_254 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_7_U   | -    | -    |        | p_ZL14storage_matrix_7   | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_15_U  | -    | -    |        | p_ZL14storage_matrix_15  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_23_U  | -    | -    |        | p_ZL14storage_matrix_23  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_31_U  | -    | -    |        | p_ZL14storage_matrix_31  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_39_U  | -    | -    |        | p_ZL14storage_matrix_39  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_47_U  | -    | -    |        | p_ZL14storage_matrix_47  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_55_U  | -    | -    |        | p_ZL14storage_matrix_55  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_63_U  | -    | -    |        | p_ZL14storage_matrix_63  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_71_U  | -    | -    |        | p_ZL14storage_matrix_71  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_79_U  | -    | -    |        | p_ZL14storage_matrix_79  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_87_U  | -    | -    |        | p_ZL14storage_matrix_87  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_95_U  | -    | -    |        | p_ZL14storage_matrix_95  | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_103_U | -    | -    |        | p_ZL14storage_matrix_103 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_111_U | -    | -    |        | p_ZL14storage_matrix_111 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_119_U | -    | -    |        | p_ZL14storage_matrix_119 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_127_U | -    | -    |        | p_ZL14storage_matrix_127 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_135_U | -    | -    |        | p_ZL14storage_matrix_135 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_143_U | -    | -    |        | p_ZL14storage_matrix_143 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_151_U | -    | -    |        | p_ZL14storage_matrix_151 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_159_U | -    | -    |        | p_ZL14storage_matrix_159 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_167_U | -    | -    |        | p_ZL14storage_matrix_167 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_175_U | -    | -    |        | p_ZL14storage_matrix_175 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_183_U | -    | -    |        | p_ZL14storage_matrix_183 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_191_U | -    | -    |        | p_ZL14storage_matrix_191 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_199_U | -    | -    |        | p_ZL14storage_matrix_199 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_207_U | -    | -    |        | p_ZL14storage_matrix_207 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_215_U | -    | -    |        | p_ZL14storage_matrix_215 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_223_U | -    | -    |        | p_ZL14storage_matrix_223 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_231_U | -    | -    |        | p_ZL14storage_matrix_231 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_239_U | -    | -    |        | p_ZL14storage_matrix_239 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_247_U | -    | -    |        | p_ZL14storage_matrix_247 | rom_1p  | auto | 1       |
+|   p_ZL14storage_matrix_255_U | -    | -    |        | p_ZL14storage_matrix_255 | rom_1p  | auto | 1       |
++------------------------------+------+------+--------+--------------------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-------------------------------------------+-----------------------------------------------------------+
+| Type            | Options                                   | Location                                                  |
++-----------------+-------------------------------------------+-----------------------------------------------------------+
+| interface       | axis port=in_spikes                       | spiking_binam_hls.cpp:9 in spiking_binam, in_spikes       |
+| interface       | s_axilite port=in_spike_count bundle=CTRL | spiking_binam_hls.cpp:10 in spiking_binam, in_spike_count |
+| interface       | axis port=out_spikes                      | spiking_binam_hls.cpp:11 in spiking_binam, out_spikes     |
+| interface       | s_axilite port=return bundle=CTRL         | spiking_binam_hls.cpp:12 in spiking_binam, return         |
+| array_partition | variable=storage_matrix complete dim=2    | spiking_binam_hls.cpp:15 in spiking_binam, storage_matrix |
+| array_partition | variable=v cyclic factor=8                | spiking_binam_hls.cpp:20 in spiking_binam, v              |
+| array_partition | variable=ref_timer cyclic factor=8        | spiking_binam_hls.cpp:21 in spiking_binam, ref_timer      |
+| unroll          | factor=8                                  | spiking_binam_hls.cpp:39 in spiking_binam                 |
+| pipeline        | II=1                                      | spiking_binam_hls.cpp:55 in spiking_binam                 |
+| pipeline        | II=1                                      | spiking_binam_hls.cpp:71 in spiking_binam                 |
+| pipeline        | II=1                                      | spiking_binam_hls.cpp:80 in spiking_binam                 |
++-----------------+-------------------------------------------+-----------------------------------------------------------+
+
+

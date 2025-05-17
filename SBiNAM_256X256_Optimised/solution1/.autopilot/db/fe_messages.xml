@@ -1,0 +1,207 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:678:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:692:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_ref.h:706:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="spiking_binam" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=spiking_binam" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="spiking_binam" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=spiking_binam" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spiking_binam_hls.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spiking_binam" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=in_spikes" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spiking_binam_hls.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spiking_binam" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=in_spike_count bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spiking_binam_hls.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spiking_binam" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=out_spikes" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spiking_binam_hls.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spiking_binam" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spiking_binam_hls.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spiking_binam" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=v cyclic factor=8" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spiking_binam_hls.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spiking_binam" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=ref_timer cyclic factor=8" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spiking_binam_hls.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spiking_binam" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=8" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spiking_binam_hls.cpp:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spiking_binam" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spiking_binam_hls.cpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spiking_binam" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spiking_binam_hls.cpp:77:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spiking_binam" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function 'ssdm_int&lt;16, false&gt;::ssdm_int(unsigned short)' into 'ap_int_base&lt;16, false&gt;::ap_int_base(int)'">
+        <args Callee="ssdm_int&lt;16, false&gt;::ssdm_int(unsigned short)" Caller="ap_int_base&lt;16, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function 'ssdm_int&lt;32, true&gt;::ssdm_int(int)' into 'ap_int_base&lt;32, true&gt;::ap_int_base(int)'">
+        <args Callee="ssdm_int&lt;32, true&gt;::ssdm_int(int)" Caller="ap_int_base&lt;32, true&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106" msg_body="Inlining function '_ZN8ssdm_intILi33ELb1EEC2EDq33_i' into 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" Caller="ap_int_base&lt;33, true&gt;::ap_int_base&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106" msg_body="Inlining function '_ZN8ssdm_intILi33ELb1EEC2EDq33_i' into 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" Caller="ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function '_ZN8ssdm_intILi33ELb1EEC2EDq33_i' into 'ap_int_base&lt;33, true&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" Caller="ap_int_base&lt;33, true&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:339" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;)' into 'ap_int_base&lt;16, false&gt;::RType&lt;32, true&gt;::plus operator+&lt;16, false, 32, true&gt;(ap_int_base&lt;16, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::ap_int_base&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;)" Caller="ap_int_base&lt;16, false&gt;::RType&lt;32, true&gt;::plus operator+&lt;16, false, 32, true&gt;(ap_int_base&lt;16, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:516" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;16, false&gt;::RType&lt;32, true&gt;::plus operator+&lt;16, false, 32, true&gt;(ap_int_base&lt;16, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;16, false&gt;::RType&lt;32, true&gt;::plus operator+&lt;16, false, 32, true&gt;(ap_int_base&lt;16, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1495:427" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;16, false&gt;::RType&lt;32, true&gt;::plus operator+&lt;16, false, 32, true&gt;(ap_int_base&lt;16, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;16, false&gt;::RType&lt;32, true&gt;::plus operator+&lt;16, false, 32, true&gt;(ap_int_base&lt;16, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1006" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;16, false&gt;::RType&lt;($_0)32, true&gt;::plus operator+&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;16, false&gt;::RType&lt;($_0)32, true&gt;::plus operator+&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:1004" msg_body="Inlining function 'ap_int_base&lt;16, false&gt;::RType&lt;32, true&gt;::plus operator+&lt;16, false, 32, true&gt;(ap_int_base&lt;16, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;16, false&gt;::RType&lt;($_0)32, true&gt;::plus operator+&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;16, false&gt;::RType&lt;32, true&gt;::plus operator+&lt;16, false, 32, true&gt;(ap_int_base&lt;16, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;16, false&gt;::RType&lt;($_0)32, true&gt;::plus operator+&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106" msg_body="Inlining function 'ssdm_int&lt;16, false&gt;::ssdm_int(unsigned short)' into 'ap_int_base&lt;16, false&gt;::ap_int_base&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)'">
+        <args Callee="ssdm_int&lt;16, false&gt;::ssdm_int(unsigned short)" Caller="ap_int_base&lt;16, false&gt;::ap_int_base&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function '_ZN8ssdm_intILi7ELb0EEC2EDq7_j' into 'ap_int_base&lt;7, false&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi7ELb0EEC2EDq7_j" Caller="ap_int_base&lt;7, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function '_ZN8ssdm_intILi3ELb0EEC2EDq3_j' into 'ap_int_base&lt;3, false&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi3ELb0EEC2EDq3_j" Caller="ap_int_base&lt;3, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function '_ZN8ssdm_intILi6ELb0EEC2EDq6_j' into 'ap_int_base&lt;6, false&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi6ELb0EEC2EDq6_j" Caller="ap_int_base&lt;6, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base&lt;1, false&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" Caller="ap_int_base&lt;1, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:16" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::ap_int_base(int)' into 'ap_int_base&lt;6, false&gt;::operator++(int)'">
+        <args Callee="ap_int_base&lt;1, false&gt;::ap_int_base(int)" Caller="ap_int_base&lt;6, false&gt;::operator++(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:879:5" msg_body="Inlining function 'ap_int_base&lt;6, false&gt;&amp; ap_int_base&lt;6, false&gt;::operator+=&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)' into 'ap_int_base&lt;6, false&gt;::operator++(int)'">
+        <args Callee="ap_int_base&lt;6, false&gt;&amp; ap_int_base&lt;6, false&gt;::operator+=&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)" Caller="ap_int_base&lt;6, false&gt;::operator++(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:1853" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'bool operator==&lt;3, false&gt;(ap_int_base&lt;3, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="bool operator==&lt;3, false&gt;(ap_int_base&lt;3, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:1850" msg_body="Inlining function 'bool ap_int_base&lt;3, false&gt;::operator==&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const' into 'bool operator==&lt;3, false&gt;(ap_int_base&lt;3, false&gt; const&amp;, int)'">
+        <args Callee="bool ap_int_base&lt;3, false&gt;::operator==&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const" Caller="bool operator==&lt;3, false&gt;(ap_int_base&lt;3, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1727:167" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;7, false&gt;&amp; operator+=&lt;7, false&gt;(ap_int_base&lt;7, false&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;7, false&gt;&amp; operator+=&lt;7, false&gt;(ap_int_base&lt;7, false&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1727:164" msg_body="Inlining function 'ap_int_base&lt;7, false&gt;&amp; ap_int_base&lt;7, false&gt;::operator+=&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;7, false&gt;&amp; operator+=&lt;7, false&gt;(ap_int_base&lt;7, false&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;7, false&gt;&amp; ap_int_base&lt;7, false&gt;::operator+=&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;7, false&gt;&amp; operator+=&lt;7, false&gt;(ap_int_base&lt;7, false&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:337" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'bool operator&gt;&lt;3, false&gt;(ap_int_base&lt;3, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="bool operator&gt;&lt;3, false&gt;(ap_int_base&lt;3, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1788:335" msg_body="Inlining function 'bool ap_int_base&lt;3, false&gt;::operator&gt;&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const' into 'bool operator&gt;&lt;3, false&gt;(ap_int_base&lt;3, false&gt; const&amp;, int)'">
+        <args Callee="bool ap_int_base&lt;3, false&gt;::operator&gt;&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const" Caller="bool operator&gt;&lt;3, false&gt;(ap_int_base&lt;3, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:884:16" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::ap_int_base(int)' into 'ap_int_base&lt;3, false&gt;::operator--(int)'">
+        <args Callee="ap_int_base&lt;1, false&gt;::ap_int_base(int)" Caller="ap_int_base&lt;3, false&gt;::operator--(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:884:5" msg_body="Inlining function 'ap_int_base&lt;3, false&gt;&amp; ap_int_base&lt;3, false&gt;::operator-=&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)' into 'ap_int_base&lt;3, false&gt;::operator--(int)'">
+        <args Callee="ap_int_base&lt;3, false&gt;&amp; ap_int_base&lt;3, false&gt;::operator-=&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)" Caller="ap_int_base&lt;3, false&gt;::operator--(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106" msg_body="Inlining function '_ZN8ssdm_intILi38ELb1EEC2EDq38_i' into 'ap_int_base&lt;38, true&gt;::ap_int_base&lt;6, false&gt;(ap_int_base&lt;6, false&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi38ELb1EEC2EDq38_i" Caller="ap_int_base&lt;38, true&gt;::ap_int_base&lt;6, false&gt;(ap_int_base&lt;6, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106" msg_body="Inlining function '_ZN8ssdm_intILi38ELb1EEC2EDq38_i' into 'ap_int_base&lt;38, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi38ELb1EEC2EDq38_i" Caller="ap_int_base&lt;38, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function '_ZN8ssdm_intILi38ELb1EEC2EDq38_i' into 'ap_int_base&lt;38, true&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi38ELb1EEC2EDq38_i" Caller="ap_int_base&lt;38, true&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:339" msg_body="Inlining function 'ap_int_base&lt;38, true&gt;::ap_int_base&lt;6, false&gt;(ap_int_base&lt;6, false&gt; const&amp;)' into 'ap_int_base&lt;6, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;6, false, 32, true&gt;(ap_int_base&lt;6, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;38, true&gt;::ap_int_base&lt;6, false&gt;(ap_int_base&lt;6, false&gt; const&amp;)" Caller="ap_int_base&lt;6, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;6, false, 32, true&gt;(ap_int_base&lt;6, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:516" msg_body="Inlining function 'ap_int_base&lt;38, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;6, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;6, false, 32, true&gt;(ap_int_base&lt;6, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;38, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;6, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;6, false, 32, true&gt;(ap_int_base&lt;6, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1494:427" msg_body="Inlining function 'ap_int_base&lt;38, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;6, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;6, false, 32, true&gt;(ap_int_base&lt;6, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;38, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;6, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;6, false, 32, true&gt;(ap_int_base&lt;6, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:483" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;6, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;6, false&gt;(ap_int_base&lt;6, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;6, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;6, false&gt;(ap_int_base&lt;6, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:1633:481" msg_body="Inlining function 'ap_int_base&lt;6, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;6, false, 32, true&gt;(ap_int_base&lt;6, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;6, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;6, false&gt;(ap_int_base&lt;6, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;6, false&gt;::RType&lt;32, true&gt;::mult operator*&lt;6, false, 32, true&gt;(ap_int_base&lt;6, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;6, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;6, false&gt;(ap_int_base&lt;6, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:185:106" msg_body="Inlining function '_ZN8ssdm_intILi7ELb0EEC2EDq7_j' into 'ap_int_base&lt;7, false&gt;::ap_int_base&lt;38, true&gt;(ap_int_base&lt;38, true&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi7ELb0EEC2EDq7_j" Caller="ap_int_base&lt;7, false&gt;::ap_int_base&lt;38, true&gt;(ap_int_base&lt;38, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_int_base.h:214:67" msg_body="Inlining function 'ssdm_int&lt;8, false&gt;::ssdm_int(unsigned char)' into 'ap_int_base&lt;8, false&gt;::ap_int_base(int)'">
+        <args Callee="ssdm_int&lt;8, false&gt;::ssdm_int(unsigned char)" Caller="ap_int_base&lt;8, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:78:11" msg_body="Inlining function 'bool ap_int_base&lt;7, false&gt;::operator&gt;=&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;) const' into 'spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)'">
+        <args Callee="bool ap_int_base&lt;7, false&gt;::operator&gt;=&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;) const" Caller="spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:73:40" msg_body="Inlining function 'ap_int_base&lt;6, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;6, false&gt;(ap_int_base&lt;6, false&gt; const&amp;, int)' into 'spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)'">
+        <args Callee="ap_int_base&lt;6, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;6, false&gt;(ap_int_base&lt;6, false&gt; const&amp;, int)" Caller="spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:69:24" msg_body="Inlining function 'ap_int_base&lt;3, false&gt;::operator--(int)' into 'spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)'">
+        <args Callee="ap_int_base&lt;3, false&gt;::operator--(int)" Caller="spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:69:19" msg_body="Inlining function 'bool operator&gt;&lt;3, false&gt;(ap_int_base&lt;3, false&gt; const&amp;, int)' into 'spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)'">
+        <args Callee="bool operator&gt;&lt;3, false&gt;(ap_int_base&lt;3, false&gt; const&amp;, int)" Caller="spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:57:37" msg_body="Inlining function 'ap_int_base&lt;7, false&gt;&amp; operator+=&lt;7, false&gt;(ap_int_base&lt;7, false&gt;&amp;, int)' into 'spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)'">
+        <args Callee="ap_int_base&lt;7, false&gt;&amp; operator+=&lt;7, false&gt;(ap_int_base&lt;7, false&gt;&amp;, int)" Caller="spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:56:74" msg_body="Inlining function 'bool operator==&lt;3, false&gt;(ap_int_base&lt;3, false&gt; const&amp;, int)' into 'spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)'">
+        <args Callee="bool operator==&lt;3, false&gt;(ap_int_base&lt;3, false&gt; const&amp;, int)" Caller="spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:56:44" msg_body="Inlining function 'ap_int_base&lt;8, false&gt;::operator unsigned long long() const' into 'spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)'">
+        <args Callee="ap_int_base&lt;8, false&gt;::operator unsigned long long() const" Caller="spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:47:17" msg_body="Inlining function 'ap_int_base&lt;6, false&gt;::operator++(int)' into 'spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)'">
+        <args Callee="ap_int_base&lt;6, false&gt;::operator++(int)" Caller="spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:45:26" msg_body="Inlining function 'bool ap_int_base&lt;16, false&gt;::operator&gt;=&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;) const' into 'spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)'">
+        <args Callee="bool ap_int_base&lt;16, false&gt;::operator&gt;=&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;) const" Caller="spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:44:55" msg_body="Inlining function 'bool ap_int_base&lt;16, false&gt;::operator&lt;&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;) const' into 'spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)'">
+        <args Callee="bool ap_int_base&lt;16, false&gt;::operator&lt;&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;) const" Caller="spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:31:48" msg_body="Inlining function 'ap_int_base&lt;16, false&gt;::RType&lt;($_0)32, true&gt;::plus operator+&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;, int)' into 'spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)'">
+        <args Callee="ap_int_base&lt;16, false&gt;::RType&lt;($_0)32, true&gt;::plus operator+&lt;16, false&gt;(ap_int_base&lt;16, false&gt; const&amp;, int)" Caller="spiking_binam(hls::stream&lt;Spike, 0&gt;&amp;, int, hls::stream&lt;Spike, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:54:19" msg_body="Loop 'VITIS_LOOP_54_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_54_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_34_2' (spiking_binam_hls.cpp:34:26) in function 'spiking_binam' partially with a factor of 8">
+        <args Factor="8" LoopLoc="spiking_binam_hls.cpp:34:26" LoopName="VITIS_LOOP_34_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_54_5' (spiking_binam_hls.cpp:54:19) in function 'spiking_binam' completely with a factor of 8">
+        <args Factor="8" LoopLoc="spiking_binam_hls.cpp:54:19" LoopName="VITIS_LOOP_54_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:15:0" msg_body="Applying array_partition to '_ZZ13spiking_binamRN3hls6streamI5SpikeLi0EEEiS3_E1v': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="_ZZ13spiking_binamRN3hls6streamI5SpikeLi0EEEiS3_E1v"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:16:0" msg_body="Applying array_partition to '_ZZ13spiking_binamRN3hls6streamI5SpikeLi0EEEiS3_E9ref_timer': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="_ZZ13spiking_binamRN3hls6streamI5SpikeLi0EEEiS3_E9ref_timer"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="spiking_binam_hls.cpp:53:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=4 dim=2' for array 'storage_matrix' due to pipeline pragma">
+        <args Dim="2" Factor="4" Mode="cyclic" Name="storage_matrix" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="./binam_data.h:530:0" msg_body="Applying array_partition to '_ZL14storage_matrix': Cyclic partitioning with factor 4 on dimension 2.">
+        <args Dim="2" Factor="4" Mode="Cyclic" UOName="_ZL14storage_matrix"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

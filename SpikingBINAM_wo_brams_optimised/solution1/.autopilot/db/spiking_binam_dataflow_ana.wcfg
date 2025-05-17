@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="spiking_binam.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_spiking_binam_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam//AESL_inst_spiking_binam_activity">
+         <obj_property name="label">AESL_inst_spiking_binam_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_spiking_binam_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_spiking_binam_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam//AESL_inst_spiking_binam_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam//AESL_inst_spiking_binam_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam//AESL_inst_spiking_binam_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048_activity">
+            <obj_property name="label">grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068_activity">
+            <obj_property name="label">grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080_activity">
+            <obj_property name="label">grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612_activity">
+            <obj_property name="label">grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam//AESL_inst_spiking_binam_activity">
+      <obj_property name="ElementShortName">AESL_inst_spiking_binam_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_spiking_binam_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_spiking_binam_group">
+      <obj_property name="label">AESL_inst_spiking_binam</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048_activity">
+         <obj_property name="ElementShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068_activity">
+         <obj_property name="ElementShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080_activity">
+         <obj_property name="ElementShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612_activity">
+         <obj_property name="ElementShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_spiking_binam_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048_group">
+         <obj_property name="label">grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_38_2_fu_4048/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068_group">
+         <obj_property name="label">grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_70_6_fu_4068/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080_group">
+         <obj_property name="label">grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_54_4_fu_4080/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612_group">
+         <obj_property name="label">grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_spiking_binam_top/AESL_inst_spiking_binam/grp_spiking_binam_Pipeline_VITIS_LOOP_79_7_fu_4612/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

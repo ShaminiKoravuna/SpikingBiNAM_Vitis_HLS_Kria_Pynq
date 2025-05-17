@@ -1,0 +1,280 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'spiking_binam'" level="0">
+<item name = "Date">Mon May  5 13:02:26 2025
+</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Project">SpikingBINAM</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 2.892 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_34_2_fu_168">spiking_binam_Pipeline_VITIS_LOOP_34_2, 34, 34, 0.340 us, 0.340 us, 34, 34, no</column>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204">spiking_binam_Pipeline_VITIS_LOOP_52_4, 36, 36, 0.360 us, 0.360 us, 36, 36, no</column>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_67_6_fu_249">spiking_binam_Pipeline_VITIS_LOOP_67_6, 258, 258, 2.580 us, 2.580 us, 258, 258, no</column>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269">spiking_binam_Pipeline_VITIS_LOOP_76_7, 259, 259, 2.590 us, 2.590 us, 259, 259, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_29_1">?, ?, ?, -, -, 256, no</column>
+<column name=" + VITIS_LOOP_44_3">?, ?, 3 ~ 39, -, -, ?, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 155, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">4, 0, 306, 672, 0</column>
+<column name="Memory">0, -, 160, 48, 0</column>
+<column name="Multiplexer">-, -, -, 1776, -</column>
+<column name="Register">-, -, 118, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">1, 0, ~0, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 74, 104, 0</column>
+<column name="mul_6ns_5ns_7_1_1_U69">mul_6ns_5ns_7_1_1, 0, 0, 0, 23, 0</column>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_34_2_fu_168">spiking_binam_Pipeline_VITIS_LOOP_34_2, 0, 0, 11, 43, 0</column>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204">spiking_binam_Pipeline_VITIS_LOOP_52_4, 4, 0, 89, 243, 0</column>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_67_6_fu_249">spiking_binam_Pipeline_VITIS_LOOP_67_6, 0, 0, 55, 126, 0</column>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269">spiking_binam_Pipeline_VITIS_LOOP_76_7, 0, 0, 77, 133, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W, 0, 6, 2, 0, 32, 3, 1, 96</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W, 0, 6, 2, 0, 32, 3, 1, 96</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W, 0, 6, 2, 0, 32, 3, 1, 96</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W, 0, 6, 2, 0, 32, 3, 1, 96</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W, 0, 6, 2, 0, 32, 3, 1, 96</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W, 0, 6, 2, 0, 32, 3, 1, 96</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W, 0, 6, 2, 0, 32, 3, 1, 96</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W, 0, 6, 2, 0, 32, 3, 1, 96</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W, 0, 14, 4, 0, 32, 7, 1, 224</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W, 0, 14, 4, 0, 32, 7, 1, 224</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W, 0, 14, 4, 0, 32, 7, 1, 224</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W, 0, 14, 4, 0, 32, 7, 1, 224</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W, 0, 14, 4, 0, 32, 7, 1, 224</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W, 0, 14, 4, 0, 32, 7, 1, 224</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W, 0, 14, 4, 0, 32, 7, 1, 224</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_U">spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W, 0, 14, 4, 0, 32, 7, 1, 224</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln30_fu_394_p2">+, 0, 0, 19, 12, 12</column>
+<column name="bin_end_fu_410_p2">+, 0, 0, 19, 12, 4</column>
+<column name="bin_start_V_fu_400_p2">+, 0, 0, 19, 12, 3</column>
+<column name="s_2_fu_364_p2">+, 0, 0, 16, 9, 1</column>
+<column name="threshold_V_1_fu_446_p2">+, 0, 0, 13, 6, 1</column>
+<column name="and_ln44_fu_431_p2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state5_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="grp_nbread_fu_138_p2_0">and, 0, 0, 2, 1, 0</column>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269_out_spikes_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln1027_fu_426_p2">icmp, 0, 0, 13, 16, 16</column>
+<column name="icmp_ln1031_fu_437_p2">icmp, 0, 0, 13, 16, 16</column>
+<column name="icmp_ln29_fu_358_p2">icmp, 0, 0, 11, 9, 10</column>
+<column name="cur_id_V_3_fu_456_p3">select, 0, 0, 8, 1, 8</column>
+<column name="cur_time_V_4_fu_464_p3">select, 0, 0, 16, 1, 16</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">59, 11, 1, 11</column>
+<column name="cur_id_V_fu_126">9, 2, 8, 16</column>
+<column name="cur_time_V_1_fu_130">9, 2, 16, 32</column>
+<column name="s_fu_122">9, 2, 9, 18</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10_address0">26, 5, 5, 25</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10_ce0">26, 5, 1, 5</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10_ce1">9, 2, 1, 2</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10_d0">20, 4, 3, 12</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11_address0">26, 5, 5, 25</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11_ce0">26, 5, 1, 5</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11_ce1">9, 2, 1, 2</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11_d0">20, 4, 3, 12</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12_address0">26, 5, 5, 25</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12_ce0">26, 5, 1, 5</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12_ce1">9, 2, 1, 2</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12_d0">20, 4, 3, 12</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13_address0">26, 5, 5, 25</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13_ce0">26, 5, 1, 5</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13_ce1">9, 2, 1, 2</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13_d0">20, 4, 3, 12</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14_address0">26, 5, 5, 25</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14_ce0">26, 5, 1, 5</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14_ce1">9, 2, 1, 2</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14_d0">20, 4, 3, 12</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8_address0">26, 5, 5, 25</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8_ce0">26, 5, 1, 5</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8_ce1">9, 2, 1, 2</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8_d0">20, 4, 3, 12</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9_address0">26, 5, 5, 25</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9_ce0">26, 5, 1, 5</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9_ce1">9, 2, 1, 2</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9_d0">20, 4, 3, 12</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_address0">26, 5, 5, 25</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_ce0">26, 5, 1, 5</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_ce1">9, 2, 1, 2</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_d0">20, 4, 3, 12</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_address0">20, 4, 5, 20</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_address1">14, 3, 5, 15</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_ce0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_ce1">14, 3, 1, 3</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_d0">20, 4, 7, 28</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_address0">20, 4, 5, 20</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_address1">14, 3, 5, 15</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_ce0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_ce1">14, 3, 1, 3</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_d0">20, 4, 7, 28</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_address0">20, 4, 5, 20</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_address1">14, 3, 5, 15</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_ce0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_ce1">14, 3, 1, 3</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_d0">20, 4, 7, 28</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_address0">20, 4, 5, 20</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_address1">14, 3, 5, 15</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_ce0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_ce1">14, 3, 1, 3</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_d0">20, 4, 7, 28</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_address0">20, 4, 5, 20</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_address1">14, 3, 5, 15</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_ce0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_ce1">14, 3, 1, 3</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_d0">20, 4, 7, 28</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_address0">20, 4, 5, 20</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_address1">14, 3, 5, 15</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_ce0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_ce1">14, 3, 1, 3</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_d0">20, 4, 7, 28</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_address0">20, 4, 5, 20</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_address1">14, 3, 5, 15</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_ce0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_ce1">14, 3, 1, 3</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_d0">20, 4, 7, 28</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_we0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_address0">20, 4, 5, 20</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_address1">14, 3, 5, 15</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_ce0">20, 4, 1, 4</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_ce1">14, 3, 1, 3</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_d0">20, 4, 7, 28</column>
+<column name="spiking_binam_stream_Spike_0_int_stream_Spike_0_v_we0">20, 4, 1, 4</column>
+<column name="threshold_V_2_reg_156">9, 2, 6, 12</column>
+<column name="threshold_V_reg_144">9, 2, 6, 12</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">10, 0, 10, 0</column>
+<column name="bin_start_V_reg_536">11, 0, 12, 1</column>
+<column name="cur_id_V_fu_126">8, 0, 8, 0</column>
+<column name="cur_id_V_load_reg_561">8, 0, 8, 0</column>
+<column name="cur_time_V_1_fu_130">16, 0, 16, 0</column>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_34_2_fu_168_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_67_6_fu_249_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269_ap_start_reg">1, 0, 1, 0</column>
+<column name="has_spike_1_fu_134">1, 0, 1, 0</column>
+<column name="icmp_ln1031_reg_557">1, 0, 1, 0</column>
+<column name="s_2_reg_531">9, 0, 9, 0</column>
+<column name="s_fu_122">9, 0, 9, 0</column>
+<column name="threshW_reg_571">7, 0, 7, 0</column>
+<column name="threshold_V_2_reg_156">6, 0, 6, 0</column>
+<column name="threshold_V_reg_144">6, 0, 6, 0</column>
+<column name="zext_ln186_1_reg_541">11, 0, 16, 5</column>
+<column name="zext_ln44_reg_546">11, 0, 16, 5</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CTRL_AWVALID">in, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_AWREADY">out, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_AWADDR">in, 5, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_WVALID">in, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_WREADY">out, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_WDATA">in, 32, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_WSTRB">in, 4, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_ARVALID">in, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_ARREADY">out, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_ARADDR">in, 5, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_RVALID">out, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_RREADY">in, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_RDATA">out, 32, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_RRESP">out, 2, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_BVALID">out, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_BREADY">in, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_BRESP">out, 2, s_axi, CTRL, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, spiking_binam, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, spiking_binam, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, spiking_binam, return value</column>
+<column name="in_spikes_TDATA">in, 32, axis, in_spikes, pointer</column>
+<column name="in_spikes_TVALID">in, 1, axis, in_spikes, pointer</column>
+<column name="in_spikes_TREADY">out, 1, axis, in_spikes, pointer</column>
+<column name="out_spikes_TDATA">out, 32, axis, out_spikes, pointer</column>
+<column name="out_spikes_TVALID">out, 1, axis, out_spikes, pointer</column>
+<column name="out_spikes_TREADY">in, 1, axis, out_spikes, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb.cpp in debug mode
+   Compiling ../../../../spiking_binam_hls.cpp in debug mode
+   Generating csim.exe
+FP=4  FN=0
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1284
+ERR: [SIM 100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 3] *************** CSIM finish ***************

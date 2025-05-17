@@ -1,0 +1,465 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 51434
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xck26-sfvc784-2LV-c -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2764
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1776.332 ; gain = 332.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam.v:10]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_34_2' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_34_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_flow_control_loop_pipe_sequential_init' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_flow_control_loop_pipe_sequential_init' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_34_2' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_34_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4.v:10]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_3_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_3_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_3_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_3_ROM_AUTO_1R.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_3_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_3_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_2_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_2_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_2_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_2_ROM_AUTO_1R.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_2_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_2_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_1_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_1_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_1_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_1_ROM_AUTO_1R.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_1_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_1_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_0_ROM_AUTO_1R' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_0_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_0_ROM_AUTO_1R.dat' is read successfully [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_0_ROM_AUTO_1R.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_0_ROM_AUTO_1R' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_0_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4.v:10]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_67_6' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_67_6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_mux_83_3_1_1' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_mux_83_3_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_mux_83_3_1_1' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_mux_83_3_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_67_6' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_67_6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_76_7' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_76_7.v:10]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_mux_83_7_1_1' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_mux_83_7_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_mux_83_7_1_1' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_mux_83_7_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_76_7' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_76_7.v:10]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_CTRL_s_axi' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_CTRL_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_CTRL_s_axi.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_CTRL_s_axi' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_CTRL_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_mul_6ns_5ns_7_1_1' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_mul_6ns_5ns_7_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_mul_6ns_5ns_7_1_1' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_mul_6ns_5ns_7_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'spiking_binam_regslice_both' [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam_regslice_both' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_binam' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_CTRL_s_axi.v:261]
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_0_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_1_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_2_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_3_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1989.266 ; gain = 545.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1989.266 ; gain = 545.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1989.266 ; gain = 545.012
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1989.266 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/spiking_binam_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/spiking_binam_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2083.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2083.887 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2083.887 ; gain = 639.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2083.887 ; gain = 639.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2083.887 ; gain = 639.633
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln52_reg_674_reg' and it is trimmed from '6' to '5' bits. [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'bank_1_reg_625_reg' and it is trimmed from '6' to '5' bits. [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4.v:480]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_reg_493_reg' and it is trimmed from '9' to '8' bits. [d:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/cdc8/hdl/verilog/spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_76_7.v:413]
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'spiking_binam_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'spiking_binam_CTRL_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6904] The RAM "spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W:/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W:/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'spiking_binam_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'spiking_binam_CTRL_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2083.887 ; gain = 639.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 8     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 9     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 14    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 17    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 79    
++---RAMs : 
+	              224 Bit	(32 X 7 bit)          RAMs := 8     
+	               96 Bit	(32 X 3 bit)          RAMs := 8     
++---ROMs : 
+	                    ROMs := 8     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 24    
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 48    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 25    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 124   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14_U/ram_reg" of size (depth=32 x width=3) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_U/ram_reg" of size (depth=32 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-3332] Sequential element (CTRL_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module spiking_binam.
+WARNING: [Synth 8-3332] Sequential element (CTRL_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module spiking_binam.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2083.887 ; gain = 639.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------+-----------------------------------------------------------------------------------+---------------+----------------+
+|Module Name   | RTL Object                                                                        | Depth x Width | Implemented As | 
++--------------+-----------------------------------------------------------------------------------+---------------+----------------+
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_0_U/q1_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_1_U/q1_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_2_U/q1_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_3_U/q1_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_0_U/q0_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_1_U/q0_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_2_U/q0_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_3_U/q0_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_0_U/q1_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_1_U/q1_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_2_U/q1_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_3_U/q1_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_0_U/q0_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_1_U/q0_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_2_U/q0_reg | 16384x1       | Block RAM      | 
+|spiking_binam | grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_3_U/q0_reg | 16384x1       | Block RAM      | 
++--------------+-----------------------------------------------------------------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                                                             | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------------------------------------------------------------------+-----------+----------------------+---------------+
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_U/ram_reg    | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8_U/ram_reg  | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9_U/ram_reg  | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_U/ram_reg            | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
++------------+------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2609.875 ; gain = 1165.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 2664.676 ; gain = 1220.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                                                             | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------------------------------------------------------------------+-----------+----------------------+---------------+
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_U/ram_reg    | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8_U/ram_reg  | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9_U/ram_reg  | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14_U/ram_reg | Implied   | 32 x 3               | RAM32X1D x 3  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_U/ram_reg            | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
+|inst        | spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_U/ram_reg          | Implied   | 32 x 7               | RAM32M16 x 1  | 
++------------+------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 2669.793 ; gain = 1225.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2669.793 ; gain = 1225.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2669.793 ; gain = 1225.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2669.793 ; gain = 1225.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2669.793 ; gain = 1225.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2669.793 ; gain = 1225.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2669.793 ; gain = 1225.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |     4|
+|2     |LUT1     |     3|
+|3     |LUT2     |    47|
+|4     |LUT3     |   184|
+|5     |LUT4     |    82|
+|6     |LUT5     |    82|
+|7     |LUT6     |   144|
+|8     |MUXF7    |    10|
+|9     |RAM32M16 |     8|
+|10    |RAM32X1D |    24|
+|11    |RAMB18E2 |     4|
+|15    |FDRE     |   533|
+|16    |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2669.793 ; gain = 1225.539
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 2669.793 ; gain = 1130.918
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2669.793 ; gain = 1225.539
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2673.641 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_0_U/q1_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_1_U/q1_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_2_U/q1_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_3_U/q1_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2687.523 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 8 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 24 instances
+
+Synth Design complete, checksum: 19730efc
+INFO: [Common 17-83] Releasing license: Synthesis
+108 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:04 . Memory (MB): peak = 2687.523 ; gain = 2221.910
+INFO: [Common 17-1381] The checkpoint 'D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 41cbd82e71ff6d1f
+INFO: [Coretcl 2-1174] Renamed 33 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/Kria/May2025/BiNAM/SpikingBINAM/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  5 13:05:39 2025...

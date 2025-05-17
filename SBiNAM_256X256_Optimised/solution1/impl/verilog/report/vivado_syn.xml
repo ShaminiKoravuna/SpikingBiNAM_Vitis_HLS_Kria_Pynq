@@ -1,0 +1,217 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2022.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>2.507</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>2.507</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>2.507</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>7.493</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>7.493</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>7.493</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>7.493</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>4</BRAM>
+    <CLB>0</CLB>
+    <DSP>0</DSP>
+    <FF>534</FF>
+    <LATCH>0</LATCH>
+    <LUT>500</LUT>
+    <SRL>0</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>288</BRAM>
+    <CLB>0</CLB>
+    <DSP>1248</DSP>
+    <FF>234240</FF>
+    <LUT>117120</LUT>
+    <URAM>64</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="spiking_binam" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="24">CTRL_s_axi_U grp_spiking_binam_Pipeline_VITIS_LOOP_34_2_fu_168 grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204 grp_spiking_binam_Pipeline_VITIS_LOOP_67_6_fu_249 grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269 mul_6ns_5ns_7_1_1_U69 regslice_both_in_spikes_U regslice_both_out_spikes_U spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10_U spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11_U spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12_U spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13_U spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14_U spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8_U spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9_U spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_U spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_U spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_U spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_U spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_U spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_U spiking_binam_stream_Spike_0_int_stream_Spike_0_v_U</SubModules>
+    <Resources BRAM="4" FF="534" LUT="500" LUTRAM="112" LogicLUT="388" RAMB18="4"/>
+    <LocalResources FF="107" LUT="55" LogicLUT="55"/>
+  </RtlModule>
+  <RtlModule CELL="inst/CTRL_s_axi_U" BINDMODULE="spiking_binam_CTRL_s_axi" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_CTRL_s_axi">
+    <Resources FF="86" LUT="50" LogicLUT="50"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_34_2_fu_168" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_34_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="8" LUT="23" LogicLUT="23"/>
+    <LocalResources FF="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_34_2_fu_168/flow_control_loop_pipe_sequential_init_U" BINDMODULE="spiking_binam_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_34_2.v" ORIG_REF_NAME="spiking_binam_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4">
+    <SubModules count="5">flow_control_loop_pipe_sequential_init_U p_ZL14storage_matrix_0_U p_ZL14storage_matrix_1_U p_ZL14storage_matrix_2_U p_ZL14storage_matrix_3_U</SubModules>
+    <Resources BRAM="4" FF="79" LUT="46" LogicLUT="46" RAMB18="4"/>
+    <LocalResources FF="77" LUT="30" LogicLUT="30"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/flow_control_loop_pipe_sequential_init_U" BINDMODULE="spiking_binam_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4.v" ORIG_REF_NAME="spiking_binam_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="16" LogicLUT="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_0_U" BINDMODULE="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_0_ROM_AUTO_1R" DEPTH="2" FILE_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4.v" ORIG_REF_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_0_ROM_AUTO_1R">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_1_U" BINDMODULE="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_1_ROM_AUTO_1R" DEPTH="2" FILE_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4.v" ORIG_REF_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_1_ROM_AUTO_1R">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_2_U" BINDMODULE="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_2_ROM_AUTO_1R" DEPTH="2" FILE_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4.v" ORIG_REF_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_2_ROM_AUTO_1R">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/p_ZL14storage_matrix_3_U" BINDMODULE="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_3_ROM_AUTO_1R" DEPTH="2" FILE_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4.v" ORIG_REF_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_52_4_p_ZL14storage_matrix_3_ROM_AUTO_1R">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_67_6_fu_249" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_67_6">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="20" LUT="40" LogicLUT="40"/>
+    <LocalResources FF="18" LUT="17" LogicLUT="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_67_6_fu_249/flow_control_loop_pipe_sequential_init_U" BINDMODULE="spiking_binam_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_67_6.v" ORIG_REF_NAME="spiking_binam_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_76_7">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="36" LUT="69" LogicLUT="69"/>
+    <LocalResources FF="34" LUT="43" LogicLUT="43"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/flow_control_loop_pipe_sequential_init_U" BINDMODULE="spiking_binam_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="spiking_binam_spiking_binam_Pipeline_VITIS_LOOP_76_7.v" ORIG_REF_NAME="spiking_binam_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="26" LogicLUT="26"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_6ns_5ns_7_1_1_U69" BINDMODULE="spiking_binam_mul_6ns_5ns_7_1_1" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_mul_6ns_5ns_7_1_1">
+    <Resources LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_in_spikes_U" BINDMODULE="spiking_binam_regslice_both" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_regslice_both">
+    <Resources FF="52" LUT="19" LogicLUT="19"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_out_spikes_U" BINDMODULE="spiking_binam_regslice_both" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_regslice_both">
+    <Resources FF="42" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_10_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W">
+    <Resources FF="6" LUT="8" LUTRAM="6" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_11_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W">
+    <Resources FF="6" LUT="7" LUTRAM="6" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_12_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W">
+    <Resources FF="6" LUT="7" LUTRAM="6" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_13_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W">
+    <Resources FF="6" LUT="7" LUTRAM="6" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_14_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W">
+    <Resources FF="6" LUT="9" LUTRAM="6" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_8_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W">
+    <Resources FF="6" LUT="7" LUTRAM="6" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_9_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W">
+    <Resources FF="6" LUT="8" LUTRAM="6" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_ref_timer_RAM_AUTO_1R1W">
+    <Resources FF="6" LUT="7" LUTRAM="6" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_1_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W">
+    <Resources FF="7" LUT="14" LUTRAM="8" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_2_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W">
+    <Resources FF="7" LUT="14" LUTRAM="8" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_3_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W">
+    <Resources FF="7" LUT="14" LUTRAM="8" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W">
+    <Resources FF="7" LUT="14" LUTRAM="8" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_5_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W">
+    <Resources FF="7" LUT="14" LUTRAM="8" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W">
+    <Resources FF="7" LUT="14" LUTRAM="8" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_7_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W">
+    <Resources FF="7" LUT="16" LUTRAM="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_U" BINDMODULE="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="spiking_binam.v" ORIG_REF_NAME="spiking_binam_spiking_binam_stream_Spike_0_int_stream_Spike_0_v_RAM_AUTO_1R1W">
+    <Resources FF="7" LUT="15" LUTRAM="8" LogicLUT="7"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="2.165" DATAPATH_LOGIC_DELAY="0.896" DATAPATH_NET_DELAY="1.269" ENDPOINT_PIN="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg_0_31_0_6/RAMA/WE" LOGIC_LEVELS="6" MAX_FANOUT="16" SLACK="7.493" STARTPOINT_PIN="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/q1_reg[1]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/q1_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="63"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_29" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_15" PRIMITIVE_TYPE="CLB.MUXF.MUXF7" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_4" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/ram_reg_0_31_0_0_i_3__0" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/ram_reg_0_31_0_6_i_1__3" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="49"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg_0_31_0_6/RAMA" PRIMITIVE_TYPE="CLB.LUTRAM.RAM32M16" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.165" DATAPATH_LOGIC_DELAY="0.896" DATAPATH_NET_DELAY="1.269" ENDPOINT_PIN="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg_0_31_0_6/RAMA_D1/WE" LOGIC_LEVELS="6" MAX_FANOUT="16" SLACK="7.493" STARTPOINT_PIN="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/q1_reg[1]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/q1_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="63"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_29" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_15" PRIMITIVE_TYPE="CLB.MUXF.MUXF7" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_4" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/ram_reg_0_31_0_0_i_3__0" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/ram_reg_0_31_0_6_i_1__3" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="49"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg_0_31_0_6/RAMA_D1" PRIMITIVE_TYPE="CLB.LUTRAM.RAM32M16" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.165" DATAPATH_LOGIC_DELAY="0.896" DATAPATH_NET_DELAY="1.269" ENDPOINT_PIN="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg_0_31_0_6/RAMB/WE" LOGIC_LEVELS="6" MAX_FANOUT="16" SLACK="7.493" STARTPOINT_PIN="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/q1_reg[1]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/q1_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="63"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_29" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_15" PRIMITIVE_TYPE="CLB.MUXF.MUXF7" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_4" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/ram_reg_0_31_0_0_i_3__0" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/ram_reg_0_31_0_6_i_1__3" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="49"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg_0_31_0_6/RAMB" PRIMITIVE_TYPE="CLB.LUTRAM.RAM32M16" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.165" DATAPATH_LOGIC_DELAY="0.896" DATAPATH_NET_DELAY="1.269" ENDPOINT_PIN="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg_0_31_0_6/RAMB_D1/WE" LOGIC_LEVELS="6" MAX_FANOUT="16" SLACK="7.493" STARTPOINT_PIN="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/q1_reg[1]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/q1_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="63"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_29" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_15" PRIMITIVE_TYPE="CLB.MUXF.MUXF7" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_4" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/ram_reg_0_31_0_0_i_3__0" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/ram_reg_0_31_0_6_i_1__3" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="49"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg_0_31_0_6/RAMB_D1" PRIMITIVE_TYPE="CLB.LUTRAM.RAM32M16" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.165" DATAPATH_LOGIC_DELAY="0.896" DATAPATH_NET_DELAY="1.269" ENDPOINT_PIN="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg_0_31_0_6/RAMC/WE" LOGIC_LEVELS="6" MAX_FANOUT="16" SLACK="7.493" STARTPOINT_PIN="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/q1_reg[1]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_6_U/q1_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" LINE_NUMBER="63"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_29" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_15" PRIMITIVE_TYPE="CLB.MUXF.MUXF7" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry_i_4" PRIMITIVE_TYPE="CLB.LUT.LUT4" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/icmp_ln1031_fu_458_p2_carry" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_76_7_fu_269/ram_reg_0_31_0_0_i_3__0" PRIMITIVE_TYPE="CLB.LUT.LUT5" LINE_NUMBER="119"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_spiking_binam_Pipeline_VITIS_LOOP_52_4_fu_204/ram_reg_0_31_0_6_i_1__3" PRIMITIVE_TYPE="CLB.LUT.LUT6" LINE_NUMBER="49"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/spiking_binam_stream_Spike_0_int_stream_Spike_0_v_4_U/ram_reg_0_31_0_6/RAMC" PRIMITIVE_TYPE="CLB.LUTRAM.RAM32M16" LINE_NUMBER=""/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/spiking_binam_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/spiking_binam_failfast_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/spiking_binam_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/spiking_binam_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/spiking_binam_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/spiking_binam_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

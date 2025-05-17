@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "spiking_binam",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "D:\/Kria\/May2025\/BiNAM\/SpikingBINAM\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "spiking_binam"
+              }]
+          }
+        },
+        {
+          "functionName": "spiking_binam",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "D:\/Kria\/May2025\/BiNAM\/SpikingBINAM\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "spiking_binam"
+              }]
+          }
+        }
+      ]
+    }]}
